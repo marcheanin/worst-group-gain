@@ -1,0 +1,19 @@
+{
+ "stand": "toxlang",
+ "metric": "hard_min",
+ "pool": "finals",
+ "N": 9,
+ "best_name": "s15:42_gepa__hard_min",
+ "best_delta": 0.034053970878944906,
+ "ceiling_mean": 0.014357100876865116,
+ "ceiling_p95": 0.044137299858963114,
+ "p_max": 0.118,
+ "half_width": 0.0350514455883406,
+ "ceiling_by_N": {
+  "2": 0.0031051835525141556,
+  "5": 0.010369655064185768,
+  "9": 0.014357100876865116
+ },
+ "p_max_bootmean": 0.1515,
+ "contrast_boot_bias": -0.004139430640808047
+}

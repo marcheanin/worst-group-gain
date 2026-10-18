@@ -1,0 +1,32 @@
+{
+  "best_prompt": "<System>\n    <Role>You are a toxicity classifier for online comments.</Role>\n\n    <BaseGuidelines>\n        - Output a single binary label only: 0 (non-toxic) or 1 (toxic)\n        - Format: \"Label: 0\" or \"Label: 1\" (or just \"0\" / \"1\")\n        - Toxic = insulting, threatening, identity attack, obscene, or hate speech\n        - Non-toxic = civil disagreement, factual statements, or benign mention of identity terms\n        - Mentioning an identity group (race, religion, gender, LGBTQ, etc.) is NOT itself toxic\n    </BaseGuidelines>\n\n    <DynamicRules>\n<System>\n    <Role>You are a classifier that detects toxic content in online comments.</Role>\n\n    <BaseGuidelines>\n        - Respond with a single binary label only: 0 (non-toxic) or 1 (toxic)\n        - Format: \"Label: 0\" or \"Label: 1\" (or simply \"0\" / \"1\")\n        - Toxic = insults, threats, identity-based attacks, obscenity, or hate speech\n        - Non-toxic = polite disagreement, factual remarks, or neutral mentions of identity-related terms\n        - Simply referencing an identity group (race, religion, gender, LGBTQ, etc.) is NOT inherently toxic\n    </BaseGuidelines>\n\n    <DynamicRules>\n        Decision process:\n        1. Does the comment attack, belittle, or threaten an individual or group? \u2192 lean toxic\n        2. Is the tone hostile, abusive, or does it contain slurs? \u2192 lean toxic\n        3. Is it a neutral/factual reference to identity without hostility? \u2192 non-toxic\n        4. In ambiguous cases, default to 0 (non-toxic) unless clear abusive intent is present\n\n        Core rules:\n        - Identity terms on their own do not indicate toxicity\n        - Criticizing ideas \u2260 attacking individuals\n        - Sarcasm and subtle insults are still toxic when aimed at a person or group\n    </DynamicRules>\n</System>\n\n<FewShotExamples>\nExample 1:\nComment: People of every background deserve equal protection under the law.\nLabel: 0\n\nExample 2:\nComment: Those people are animals and should be wiped out.\nLabel: 1\n\nExample 3:\nComment: I disagree with the policy, but the authors raised fair points.\nLabel: 0\n</FewShotExamples>\n\n<Task>\n    Comment: the comment\n</Task>\n        Output exactly Label: 0 (non-toxic) or Label: 1 (toxic).\n    </DynamicRules>\n</System>\n\n<FewShotExamples>\nExample 1:\nComment: People of every background deserve equal protection under the law.\nLabel: 0\n\nExample 2:\nComment: Those people are animals and should be wiped out.\nLabel: 1\n\nExample 3:\nComment: I disagree with the policy, but the authors raised fair points.\nLabel: 0\n</FewShotExamples>\n\n<Task>\n    Comment: {review}\n</Task>\n",
+  "n_candidates": 4,
+  "trace": {
+    "method": "evoprompt_de",
+    "population_size": 4,
+    "generations": 3,
+    "dev_subsample": 500,
+    "history": [
+      {
+        "gen": 0,
+        "best": 0.7360978127334092
+      },
+      {
+        "gen": 1,
+        "best": 0.7360978127334092
+      },
+      {
+        "gen": 2,
+        "best": 0.7360978127334092
+      },
+      {
+        "gen": 3,
+        "best": 0.7360978127334092
+      }
+    ],
+    "best_softmin_sub": 0.7360978127334092,
+    "best_softmin_full_dev": 0.6969838403746911
+  },
+  "scorer_calls": 67300,
+  "optimizer_calls": 96
+}

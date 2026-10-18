@@ -1,0 +1,82 @@
+{
+  "best_prompt": "<System>\n    <Role>You are a toxicity classifier for online comments.</Role>\n\n    <BaseGuidelines>\n        - Output a single binary label only: 0 (non-toxic) or 1 (toxic)\n        - Format: \"Label: 0\" or \"Label: 1\" (or just \"0\" / \"1\")\n        - Toxic = insulting, threatening, identity attack, obscene, or hate speech\n        - Non-toxic = civil disagreement, factual statements, or benign mention of identity terms\n        - Mentioning an identity group (race, religion, gender, LGBTQ, etc.) is NOT itself toxic\n    </BaseGuidelines>\n\n    <DynamicRules>\nWe need to rewrite the prompt to fix these errors without breaking correct cases. The current prompt is a system with guidelines, dynamic rules, few-shot examples, and a task with the comment. The errors: several comments where gold label is 1 but predicted 0 (false negatives) and one where gold is 0 but predicted 1 (false positive). We need to adjust the prompt to better capture toxic intent, sarcasm, veiled insults, hostility, etc. The failures:\n\n1. \"Hey Rochdale68 and comrades. I hand out \"Funny\" for funny comments, but I also hand out \"Funny\" for ludicrous comments. Not a hard choice, eh!\" Gold:1 Pred:0. This seems sarcastic, maybe veiled insult? \"comrades\" could be a sarcastic jab? The gold says toxic. Possibly it's a veiled insult to the person, calling their comment ludicrous, and using \"comrades\" in a mocking way. The classifier missed this veiled insult. So we need to emphasize sarcasm and veiled insults more.\n\n2. \"This situation has crept up on us in such a way that the reality of it is obscured, thanks to the combination of the State capturing control of so many institutions, and the media facilitating anti white racism to such a degree that anythi\" Gold:0 Pred:1. This is a false positive: mentioning \"anti white racism\" is not inherently toxic, it's a political statement. The classifier labeled it toxic likely because of the phrase \"anti white racism\" which might be perceived as attacking a group? The gold says non-toxic, so it's a neutral mention of identity group? It's a claim about media facilitating anti-white racism. That's not attacking a person or group, it's a statement about media. So the classifier needs to better distinguish between factual/opinion statements about identity and direct attacks. The prompt already says \"Mentioning an identity group ... is NOT itself toxic\" and \"Critique of ideas \u2260 attack on people\". So maybe the classifier still over-triggered. We need to reinforce that statements about racism against a group, even if controversial, are not necessarily toxic unless they demean or threaten.\n\n3. \"I'm with Wayne - we darn well should be whining about the habitual misuse of their/they're/there. And the even more familiar misuse of your/you're. Eh?\" Gold:1 Pred:0. This is a comment about grammar, but gold says toxic. Why? Possibly it's the tone: \"whining\" and the overall sarcastic, dismissive tone? It might be an attack on people who misuse grammar, maybe insulting them. The gold label is 1, so it's considered toxic. The classifier missed the hostile tone. So we need to capture that sarcastic, belittling comments about a group (people who misuse grammar) can be toxic. The comment uses \"we darn well should be whining\" - it's not directly attacking a person, but the gold says toxic. So we must adjust to include that belittling or mocking a group based on behavior can be toxic if hostile.\n\n4. \"I did no such thing. I highlighted the hypocrisy and double-standards of so-called \"Christian\" anti-abortionists, and nothing more. The rest is what you read into it, apparently. Go back and read it again, then tell me how I blamed Musli\" Gold:1 Pred:0. This is a defensive reply, accusing the other of misreading. The gold says toxic. Likely the phrase \"so-called 'Christian' anti-abortionists\" is a veiled insult, putting \"Christian\" in quotes, implying they aren't true Christians. That's an identity attack on a group. The classifier missed it. So we need to capture that using quotation marks to mock a group's identity is toxic.\n\n5. \"It's a simple fact that there is no mention of a sexual encounter in the report. It's a quick read, you should check it out. By your logic, is everyone who does not support her a homophobe? I am neither a lesbian nor a homophobe, nice attem\" Gold:1 Pred:0. The last part \"nice attem\" likely cut off, probably \"nice attempt\" to label them. This is a sarcastic\n        Output exactly Label: 0 (non-toxic) or Label: 1 (toxic).\n    </DynamicRules>\n</System>\n\n<FewShotExamples>\nExample 1:\nComment: People of every background deserve equal protection under the law.\nLabel: 0\n\nExample 2:\nComment: Those people are animals and should be wiped out.\nLabel: 1\n\nExample 3:\nComment: I disagree with the policy, but the authors raised fair points.\nLabel: 0\n</FewShotExamples>\n\n<Task>\n    Comment: {review}\n</Task>\n",
+  "n_candidates": 4,
+  "trace": {
+    "method": "gepa",
+    "max_metric_calls": 20000,
+    "reflections": 12,
+    "dev_subsample": 400,
+    "history": [
+      {
+        "step": 0,
+        "best": 0.6637356629955538,
+        "front": 1
+      },
+      {
+        "step": 1,
+        "best": 0.6637356629955538,
+        "front": 1
+      },
+      {
+        "step": 2,
+        "best": 0.6721789589855844,
+        "front": 2
+      },
+      {
+        "step": 3,
+        "best": 0.6721789589855844,
+        "front": 2
+      },
+      {
+        "step": 4,
+        "best": 0.6721789589855844,
+        "front": 2
+      },
+      {
+        "step": 5,
+        "best": 0.6721789589855844,
+        "front": 2
+      },
+      {
+        "step": 6,
+        "best": 0.6721789589855844,
+        "front": 2
+      },
+      {
+        "step": 7,
+        "best": 0.6721789589855844,
+        "front": 3
+      },
+      {
+        "step": 8,
+        "best": 0.6721789589855844,
+        "front": 3
+      },
+      {
+        "step": 9,
+        "best": 0.6721789589855844,
+        "front": 3
+      },
+      {
+        "step": 10,
+        "best": 0.6721789589855844,
+        "front": 3
+      },
+      {
+        "step": 11,
+        "best": 0.6721789589855844,
+        "front": 4
+      },
+      {
+        "step": 12,
+        "best": 0.6721789589855844,
+        "front": 4
+      }
+    ],
+    "best_softmin_sub": 0.6721789589855844,
+    "best_softmin_full_dev": 0.6848565378534185,
+    "note": "lightweight reflective+Pareto adapter (gepa PyPI not installed)"
+  },
+  "scorer_calls": 10900,
+  "optimizer_calls": 12
+}

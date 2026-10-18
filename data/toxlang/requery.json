@@ -1,0 +1,858 @@
+{
+ "stand": "toxlang",
+ "set": "truth_tox",
+ "n_pairs": 94,
+ "kinds": {
+  "recovered": 21,
+  "content": 73,
+  "transport": 0
+ },
+ "pairs": [
+  {
+   "prompt": "r15:nl_lenient_max",
+   "row": 750,
+   "group": 4,
+   "gold": 1,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p30",
+   "row": 1801,
+   "group": 5,
+   "gold": 1,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p90",
+   "row": 166,
+   "group": 6,
+   "gold": 1,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p90",
+   "row": 249,
+   "group": 3,
+   "gold": 0,
+   "raw": "Label: 0",
+   "label": 0,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p90",
+   "row": 253,
+   "group": 5,
+   "gold": 1,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p90",
+   "row": 265,
+   "group": 5,
+   "gold": 0,
+   "raw": "Label: 0",
+   "label": 0,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p90",
+   "row": 267,
+   "group": 6,
+   "gold": 1,
+   "raw": "Label: 0",
+   "label": 0,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p90",
+   "row": 270,
+   "group": 6,
+   "gold": 0,
+   "raw": "Label: 0",
+   "label": 0,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p90",
+   "row": 272,
+   "group": 2,
+   "gold": 1,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p90",
+   "row": 288,
+   "group": 2,
+   "gold": 0,
+   "raw": "Label: 0",
+   "label": 0,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p90",
+   "row": 302,
+   "group": 4,
+   "gold": 1,
+   "raw": "Label: 0",
+   "label": 0,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p90",
+   "row": 310,
+   "group": 1,
+   "gold": 1,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 40,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 60,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 92,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 112,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 134,
+   "group": 1,
+   "gold": 1,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 252,
+   "group": 1,
+   "gold": 0,
+   "raw": "Label: 0",
+   "label": 0,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 286,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 289,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 310,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 405,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 438,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 485,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 492,
+   "group": 1,
+   "gold": 0,
+   "raw": "Label: 0",
+   "label": 0,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 513,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 520,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 556,
+   "group": 1,
+   "gold": 0,
+   "raw": "Label: 0",
+   "label": 0,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 590,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 725,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 733,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 754,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 766,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 790,
+   "group": 1,
+   "gold": 1,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 804,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 820,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 891,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 924,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 961,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 981,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1072,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1135,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1160,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1162,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1280,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1339,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1373,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1408,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1414,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1440,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1452,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1458,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1466,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1485,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1486,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1548,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1560,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1563,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1662,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1720,
+   "group": 1,
+   "gold": 0,
+   "raw": "Label: 0",
+   "label": 0,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1736,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1862,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1879,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1909,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1924,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 1998,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2011,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2021,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2041,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2046,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2051,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2078,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2165,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2172,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2180,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2257,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2278,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2313,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2319,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2413,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2503,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2507,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2657,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2748,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2757,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2836,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2859,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2865,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2972,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2990,
+   "group": 1,
+   "gold": 0,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s15:44_evoprompt_de__hard_min",
+   "row": 2998,
+   "group": 1,
+   "gold": 1,
+   "raw": "```xml\n<System>\n    <Role>You are a robust toxicity",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "seed",
+   "row": 3,
+   "group": 6,
+   "gold": 0,
+   "raw": "Label: 0",
+   "label": 0,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "seed",
+   "row": 15,
+   "group": 3,
+   "gold": 1,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "seed",
+   "row": 21,
+   "group": 6,
+   "gold": 1,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  }
+ ]
+}

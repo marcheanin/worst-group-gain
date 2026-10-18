@@ -1,0 +1,22 @@
+{
+ "ape": {
+  "slots": 21,
+  "unparsable_ge_50": 0,
+  "unparsable_ge_95": 0
+ },
+ "apo": {
+  "slots": 57,
+  "unparsable_ge_50": 2,
+  "unparsable_ge_95": 1
+ },
+ "evoprompt_de": {
+  "slots": 48,
+  "unparsable_ge_50": 25,
+  "unparsable_ge_95": 21
+ },
+ "gepa": {
+  "slots": 26,
+  "unparsable_ge_50": 4,
+  "unparsable_ge_95": 2
+ }
+}

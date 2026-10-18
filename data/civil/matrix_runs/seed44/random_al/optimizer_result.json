@@ -1,0 +1,74 @@
+{
+  "best_prompt": "# Task\n**Classification Guidelines**\n\nDecide whether the provided text is **toxic** or **non-toxic** by following these steps:\n\n1. **Check for direct personal attacks** \u2013 This includes insults, name-calling (e.g., \u201cfool\u201d, \u201cidiot\u201d, \u201casshole\u201d), profanity directed at a person (\u201cgo fuck yourself\u201d), slurs, threats, or dehumanizing language that reduces a person or group to a subhuman level (e.g., \u201cmentally ill scum\u201d, \u201canimals\u201d, \u201cvermin\u201d).  \n   If any such attack is present \u2192 **toxic**.\n\n2. **Evaluate criticism of ideas, actions, or policies** \u2013 If the text expresses disagreement, annoyance, or harsh criticism of what someone does, says, or believes, but does *not* resort to personal insults or dehumanizing labels, then it is non-toxic.  \n   - Strong language or an abrasive tone alone is not toxic.  \n   - Criticising a political stance, a policy, or a person\u2019s behaviour (without attacking their intrinsic worth or protected characteristics) remains non-toxic.  \n   Example: \u201cThat policy is cruel and heartless\u201d is non-toxic; \u201cYou are a cruel and heartless monster\u201d is toxic.\n\n3. **Check for targeting a protected characteristic with abuse** \u2013 Even if no direct insult is used, content that shows hostility toward a group based on race, gender, religion, sexual orientation, disability, etc., with a clear intent to demean or harass, is toxic.  \n   - Simply mentioning a protected category during a critical discussion (e.g., \u201cthe GOP infantilizes black Americans\u201d) is **not** automatically toxic.  \n   - Using an identity as a weapon (e.g., \u201cyou stupid [slur]\u201d) or making sweeping dehumanizing generalisations about a protected group is toxic.\n\n4. **If uncertain, default to non-toxic (0)** \u2013 When the text could reasonably be interpreted either way, choose the more moderate label.\n\n**Key clarifications**\n- A personal insult always makes a statement toxic, even if it comes in the middle of a policy debate.\n- Labelling people with mental illness, inferiority, or other stigmatising traits in a derogatory manner is a form of dehumanization \u2192 toxic.\n- Calling out misconduct, injustice, or offensive behaviour is not toxic, provided it does not itself become abusive.\n- Mere presence of identity terms is not toxic; the intent to demean or do harm is what matters.\n\n# Output format\nOutput exactly 'Label: 0' or 'Label: 1'.\n\n# Prediction\nText: {review}\nLabel:\n",
+  "n_candidates": 4,
+  "trace": {
+    "method": "random_al",
+    "rounds": 2,
+    "beam_size": 4,
+    "opt": {
+      "minibatch_size": 64,
+      "n_gradients": 4,
+      "errors_per_gradient": 4,
+      "gradients_per_error": 1,
+      "steps_per_gradient": 1,
+      "mc_samples_per_step": 2,
+      "max_expansion_factor": 8,
+      "reject_on_errors": false
+    },
+    "history": [
+      {
+        "round": 0,
+        "beam_train_softmin": [
+          0.659860285039013
+        ],
+        "beam_lens": [
+          651
+        ]
+      },
+      {
+        "round": 1,
+        "beam_train_softmin": [
+          0.6695143851338596,
+          0.6662400999495506,
+          0.659860285039013,
+          0.6542097911134057
+        ],
+        "beam_lens": [
+          713,
+          1531,
+          651,
+          1187
+        ]
+      },
+      {
+        "round": 2,
+        "beam_train_softmin": [
+          0.6915128362728237,
+          0.6727074610536365,
+          0.6713679816499507,
+          0.6711078434452811
+        ],
+        "beam_lens": [
+          2368,
+          1943,
+          779,
+          1202
+        ]
+      }
+    ],
+    "dev_softmin_beam": [
+      0.6928473588627062,
+      0.6872523706553764,
+      0.6655639275669679,
+      0.6922485293515348
+    ],
+    "best_softmin": 0.6928473588627062,
+    "upstream": "baselines/_upstream/LMOps/prompt_optimization",
+    "label_budget": 240,
+    "extra_n": 240,
+    "mixed_n": 600,
+    "base": "apo_protegi"
+  },
+  "scorer_calls": 116280,
+  "optimizer_calls": 279
+}

@@ -1,0 +1,156 @@
+{
+ "stand": "civil",
+ "set": "truth_large",
+ "n_pairs": 16,
+ "kinds": {
+  "recovered": 15,
+  "content": 1,
+  "transport": 0
+ },
+ "pairs": [
+  {
+   "prompt": "r15:nl_strict_max",
+   "row": 613,
+   "group": 1,
+   "gold": 1,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p20",
+   "row": 71,
+   "group": 4,
+   "gold": 1,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p40",
+   "row": 3281,
+   "group": 6,
+   "gold": 0,
+   "raw": "Label: 0",
+   "label": 0,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p50",
+   "row": 1488,
+   "group": 0,
+   "gold": 1,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p50",
+   "row": 1697,
+   "group": 2,
+   "gold": 1,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p50",
+   "row": 1703,
+   "group": 2,
+   "gold": 0,
+   "raw": "Label: 0",
+   "label": 0,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p50",
+   "row": 2290,
+   "group": 0,
+   "gold": 0,
+   "raw": "Label: 0",
+   "label": 0,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p50",
+   "row": 2297,
+   "group": 2,
+   "gold": 0,
+   "raw": "Label: 0",
+   "label": 0,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p50",
+   "row": 2779,
+   "group": 7,
+   "gold": 1,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p60",
+   "row": 298,
+   "group": 6,
+   "gold": 0,
+   "raw": "Label: 0",
+   "label": 0,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p60",
+   "row": 1262,
+   "group": 1,
+   "gold": 0,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p60",
+   "row": 1273,
+   "group": 2,
+   "gold": 0,
+   "raw": "Label: 0",
+   "label": 0,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p60",
+   "row": 1341,
+   "group": 6,
+   "gold": 0,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p60",
+   "row": 1342,
+   "group": 4,
+   "gold": 1,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "s9:42_evoprompt_ga",
+   "row": 2038,
+   "group": 5,
+   "gold": 1,
+   "raw": "Okay, let's consolidate these prompts and clean up the mess. The core",
+   "label": -1,
+   "kind": "content"
+  },
+  {
+   "prompt": "s9:44_ape",
+   "row": 1452,
+   "group": 2,
+   "gold": 1,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  }
+ ]
+}

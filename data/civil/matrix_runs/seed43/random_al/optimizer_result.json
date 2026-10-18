@@ -1,0 +1,74 @@
+{
+  "best_prompt": "# Task\nDecision process:\n        1. Does the comment attack, demean, or threaten a person or group? \u2192 lean toxic\n        2. Is the tone hostile, insulting, or using slurs? \u2192 lean toxic\n        3. Is it a neutral/factual mention of identity without hostility? \u2192 non-toxic\n        4. When unsure, prefer 0 (non-toxic) unless clear abusive intent\n\n        Core rules:\n        - Identity terms alone do not imply toxicity\n        - Critique of ideas \u2260 attack on people\n        - Sarcasm and veiled insults still count as toxic when the target is a person/group\n\n# Output format\nOutput exactly 'Label: 0' or 'Label: 1'.\n\n# Prediction\nText: {review}\nLabel:\n",
+  "n_candidates": 4,
+  "trace": {
+    "method": "random_al",
+    "rounds": 2,
+    "beam_size": 4,
+    "opt": {
+      "minibatch_size": 64,
+      "n_gradients": 4,
+      "errors_per_gradient": 4,
+      "gradients_per_error": 1,
+      "steps_per_gradient": 1,
+      "mc_samples_per_step": 2,
+      "max_expansion_factor": 8,
+      "reject_on_errors": false
+    },
+    "history": [
+      {
+        "round": 0,
+        "beam_train_softmin": [
+          0.6729764370908384
+        ],
+        "beam_lens": [
+          651
+        ]
+      },
+      {
+        "round": 1,
+        "beam_train_softmin": [
+          0.6713584660855154,
+          0.5618539902926696,
+          0.5555132484669656,
+          0.5339011585101021
+        ],
+        "beam_lens": [
+          651,
+          2535,
+          2631,
+          105
+        ]
+      },
+      {
+        "round": 2,
+        "beam_train_softmin": [
+          0.6729764370908384,
+          0.6657111206412005,
+          0.661408284348339,
+          0.6605011906729368
+        ],
+        "beam_lens": [
+          651,
+          1555,
+          352,
+          814
+        ]
+      }
+    ],
+    "dev_softmin_beam": [
+      0.6724990193618878,
+      0.6573514564554133,
+      0.6668980901260854,
+      0.6565753842830142
+    ],
+    "best_softmin": 0.6724990193618878,
+    "upstream": "baselines/_upstream/LMOps/prompt_optimization",
+    "label_budget": 240,
+    "extra_n": 240,
+    "mixed_n": 600,
+    "base": "apo_protegi"
+  },
+  "scorer_calls": 116880,
+  "optimizer_calls": 270
+}

@@ -1,0 +1,61 @@
+{
+  "best_prompt": "<System>\n    <Role>You are a toxicity classifier for online comments.</Role>\n\n    <BaseGuidelines>\n        - Output a single binary label only: 0 (non-toxic) or 1 (toxic)\n        - Format: \"Label: 0\" or \"Label: 1\" (or just \"0\" / \"1\")\n        - Toxic = insulting, threatening, identity attack, obscene, or hate speech\n        - Non-toxic = civil disagreement, factual statements, or benign mention of identity terms\n        - Mentioning an identity group (race, religion, gender, LGBTQ, etc.) is NOT itself toxic\n    </BaseGuidelines>\n\n    <DynamicRules>\nWe are given several input-output examples. The inputs are text strings, and outputs are either \"1\" or \"0\". The task is to infer the instruction that generated these outputs. We need to \"briefly illustrate the instruction and describe the output format.\" Looking at the examples: 1. Input: \"Karem is a fag\" -> Output: 1. This seems like a hate speech / insult. 2. Input: Long text about Trump and Muslim ban. Output: 1\n        Output exactly Label: 0 (non-toxic) or Label: 1 (toxic).\n    </DynamicRules>\n</System>\n\n<FewShotExamples>\nExample 1:\nComment: People of every background deserve equal protection under the law.\nLabel: 0\n\nExample 2:\nComment: Those people are animals and should be wiped out.\nLabel: 1\n\nExample 3:\nComment: I disagree with the policy, but the authors raised fair points.\nLabel: 0\n</FewShotExamples>\n\n<Task>\n    Comment: {review}\n</Task>\n",
+  "n_candidates": 7,
+  "trace": {
+    "method": "gpo",
+    "k": 6,
+    "n_shots": 36,
+    "conf_threshold": 0.83,
+    "stage1_n": 7,
+    "label": {
+      "kept_before_upsample": 3697,
+      "total": 4000,
+      "conf_threshold": 0.83,
+      "mean_confidence": 0.9490833333333334,
+      "frac_above_T": 0.92425,
+      "labeled_after_upsample": 4000
+    },
+    "mixed_n": 4360,
+    "scored": [
+      {
+        "softmin": 0.6789674932631532,
+        "worst_gba": 0.6390123456790123,
+        "prompt_len": 1432
+      },
+      {
+        "softmin": 0.6849983586431357,
+        "worst_gba": 0.642962962962963,
+        "prompt_len": 1414
+      },
+      {
+        "softmin": 0.6620351358035097,
+        "worst_gba": 0.6204938271604938,
+        "prompt_len": 1502
+      },
+      {
+        "softmin": 0.6796052474308836,
+        "worst_gba": 0.6339506172839506,
+        "prompt_len": 1471
+      },
+      {
+        "softmin": 0.6769448636915757,
+        "worst_gba": 0.6440740740740741,
+        "prompt_len": 1268
+      },
+      {
+        "softmin": 0.6892064291844355,
+        "worst_gba": 0.6434567901234568,
+        "prompt_len": 1414
+      },
+      {
+        "softmin": 0.6836170884869482,
+        "worst_gba": 0.6262962962962964,
+        "prompt_len": 1488
+      }
+    ],
+    "best_softmin": 0.6892064291844355,
+    "upstream": "baselines/_upstream/GPO/experiments/run_gpo.py"
+  },
+  "scorer_calls": 72380,
+  "optimizer_calls": 172
+}

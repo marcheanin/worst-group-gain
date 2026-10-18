@@ -1,0 +1,130 @@
+{
+  "best_prompt": "# Task\nHere's a rephrased version of the toxicity evaluation guide:\n\n---\n\n**Guidelines for identifying toxic content:**\n\n- A comment is likely toxic if it attacks, insults, or threatens a person or group.\n- Aggressive, demeaning speech, or the use of slurs, indicates toxicity.\n- Neutral, factual references to identity without hostility are not toxic.\n- When in doubt, classify as non-toxic (0) unless clear abusive intent is evident.\n\n**Core rules:**\n- Simply mentioning identity characteristics does not make content toxic.\n- Criticizing an idea is different from attacking an individual.\n- Sarcasm or veiled hostility aimed at people or groups is still considered toxic.\n\n# Output format\nOutput exactly 'Label: 0' (non-toxic) or 'Label: 1' (toxic).\n\n# Prediction\nComment: {review}\nLabel:\n",
+  "n_candidates": 4,
+  "trace": {
+    "method": "apo_protegi",
+    "rounds": 6,
+    "beam_size": 4,
+    "opt": {
+      "minibatch_size": 64,
+      "n_gradients": 4,
+      "errors_per_gradient": 4,
+      "gradients_per_error": 1,
+      "steps_per_gradient": 1,
+      "mc_samples_per_step": 2,
+      "max_expansion_factor": 8,
+      "reject_on_errors": false
+    },
+    "history": [
+      {
+        "round": 0,
+        "beam_train_softmin": [
+          0.7430686891002517
+        ],
+        "beam_lens": [
+          674
+        ]
+      },
+      {
+        "round": 1,
+        "beam_train_softmin": [
+          0.7430686891002517,
+          0.7320764110135007,
+          0.705098038761737,
+          0.6718486966287053
+        ],
+        "beam_lens": [
+          674,
+          826,
+          797,
+          143
+        ]
+      },
+      {
+        "round": 2,
+        "beam_train_softmin": [
+          0.7430686891002517,
+          0.7325478089864391,
+          0.7320764110135007,
+          0.7298339565540597
+        ],
+        "beam_lens": [
+          674,
+          1776,
+          826,
+          1090
+        ]
+      },
+      {
+        "round": 3,
+        "beam_train_softmin": [
+          0.7523681066136172,
+          0.7397373514700994,
+          0.7393788589500176,
+          0.7320764110135007
+        ],
+        "beam_lens": [
+          799,
+          674,
+          1776,
+          826
+        ]
+      },
+      {
+        "round": 4,
+        "beam_train_softmin": [
+          0.7600340822855141,
+          0.7523681066136172,
+          0.7433004275774686,
+          0.7430686891002517
+        ],
+        "beam_lens": [
+          621,
+          799,
+          1304,
+          674
+        ]
+      },
+      {
+        "round": 5,
+        "beam_train_softmin": [
+          0.7587268927430304,
+          0.7523681066136172,
+          0.7482401734919075,
+          0.745683068185219
+        ],
+        "beam_lens": [
+          621,
+          799,
+          1448,
+          646
+        ]
+      },
+      {
+        "round": 6,
+        "beam_train_softmin": [
+          0.7587268927430304,
+          0.7553286582241995,
+          0.7523681066136172,
+          0.745683068185219
+        ],
+        "beam_lens": [
+          621,
+          792,
+          799,
+          646
+        ]
+      }
+    ],
+    "dev_softmin_beam": [
+      0.675022236618433,
+      0.676817957865666,
+      0.6563710111528115,
+      0.6674460552095093
+    ],
+    "best_softmin": 0.676817957865666,
+    "upstream": "baselines/_upstream/LMOps/prompt_optimization"
+  },
+  "scorer_calls": 68304,
+  "optimizer_calls": 640
+}

@@ -1,0 +1,104 @@
+{
+  "best_prompt": "# Task\n**Toxicity Assessment Protocol**\n\nFollow this decision process:\n- Label as toxic if the comment expresses aggression, belittlement, or intimidation toward a person or group.\n- Label as toxic if the language is hostile, derogatory, or employs slurs.\n- Label as non-toxic if the comment references identity in an objective or neutral manner, free of antagonism.\n- When uncertain, err on the side of non-toxic (0) unless the intent to abuse is unmistakable.\n\n# Output format\nOutput exactly 'Label: 0' or 'Label: 1'.\n\n# Prediction\nText: {review}\nLabel:\n",
+  "n_candidates": 4,
+  "trace": {
+    "method": "random_al",
+    "rounds": 4,
+    "beam_size": 4,
+    "opt": {
+      "minibatch_size": 64,
+      "n_gradients": 4,
+      "errors_per_gradient": 4,
+      "gradients_per_error": 1,
+      "steps_per_gradient": 1,
+      "mc_samples_per_step": 2,
+      "max_expansion_factor": 8,
+      "reject_on_errors": false
+    },
+    "history": [
+      {
+        "round": 0,
+        "beam_train_softmin": [
+          0.7049185769618914
+        ],
+        "beam_lens": [
+          651
+        ]
+      },
+      {
+        "round": 1,
+        "beam_train_softmin": [
+          0.7050427198189486,
+          0.6774082604253246,
+          0.6609142066503384,
+          0.5788708323360258
+        ],
+        "beam_lens": [
+          651,
+          625,
+          953,
+          2543
+        ]
+      },
+      {
+        "round": 2,
+        "beam_train_softmin": [
+          0.7099805947093727,
+          0.7050427198189486,
+          0.6931843534606786,
+          0.690564216318726
+        ],
+        "beam_lens": [
+          556,
+          651,
+          1691,
+          1069
+        ]
+      },
+      {
+        "round": 3,
+        "beam_train_softmin": [
+          0.7087809856415189,
+          0.7084584254612669,
+          0.6927513551019067,
+          0.690564216318726
+        ],
+        "beam_lens": [
+          556,
+          651,
+          1691,
+          1069
+        ]
+      },
+      {
+        "round": 4,
+        "beam_train_softmin": [
+          0.7080896723202564,
+          0.7066929644356903,
+          0.7063814020794111,
+          0.7047910533727012
+        ],
+        "beam_lens": [
+          556,
+          589,
+          651,
+          558
+        ]
+      }
+    ],
+    "dev_softmin_beam": [
+      0.6740597075356475,
+      0.672866883608547,
+      0.6726414882378104,
+      0.6715904344269028
+    ],
+    "best_softmin": 0.6740597075356475,
+    "upstream": "baselines/_upstream/LMOps/prompt_optimization",
+    "label_budget": 240,
+    "extra_n": 240,
+    "mixed_n": 600,
+    "base": "apo_protegi"
+  },
+  "scorer_calls": 84032,
+  "optimizer_calls": 334
+}

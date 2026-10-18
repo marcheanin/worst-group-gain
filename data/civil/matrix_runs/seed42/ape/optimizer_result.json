@@ -1,0 +1,51 @@
+{
+  "best_prompt": "<System>\n    <Role>You are a toxicity classifier for online comments.</Role>\n\n    <BaseGuidelines>\n        - Output a single binary label only: 0 (non-toxic) or 1 (toxic)\n        - Format: \"Label: 0\" or \"Label: 1\" (or just \"0\" / \"1\")\n        - Toxic = insulting, threatening, identity attack, obscene, or hate speech\n        - Non-toxic = civil disagreement, factual statements, or benign mention of identity terms\n        - Mentioning an identity group (race, religion, gender, LGBTQ, etc.) is NOT itself toxic\n    </BaseGuidelines>\n\n    <DynamicRules>\nWe are given several input-output examples. The inputs are text passages, and the outputs are either 0 or 1. We need to infer the instruction that the friend was given, based on these examples. Then we need to briefly illustrate the instruction and describe the output format. Let's analyze the examples: 1. Input: \"Thanks, Alaska voters, for giving this moron a platform.\" Output: 1 2. Input: \"I suspect it will be in billions of years when\n        Output exactly Label: 0 (non-toxic) or Label: 1 (toxic).\n    </DynamicRules>\n</System>\n\n<FewShotExamples>\nExample 1:\nComment: People of every background deserve equal protection under the law.\nLabel: 0\n\nExample 2:\nComment: Those people are animals and should be wiped out.\nLabel: 1\n\nExample 3:\nComment: I disagree with the policy, but the authors raised fair points.\nLabel: 0\n</FewShotExamples>\n\n<Task>\n    Comment: {review}\n</Task>\n",
+  "n_candidates": 7,
+  "trace": {
+    "method": "ape",
+    "k": 6,
+    "n_shots": 36,
+    "temperature": 0.0,
+    "scored": [
+      {
+        "softmin": 0.6805784826366992,
+        "worst_gba": 0.6414814814814815,
+        "prompt_len": 1423
+      },
+      {
+        "softmin": 0.6831057200747629,
+        "worst_gba": 0.6419753086419753,
+        "prompt_len": 1435
+      },
+      {
+        "softmin": 0.6842989571949138,
+        "worst_gba": 0.6480246913580247,
+        "prompt_len": 1418
+      },
+      {
+        "softmin": 0.6825442319370535,
+        "worst_gba": 0.631358024691358,
+        "prompt_len": 1453
+      },
+      {
+        "softmin": 0.6942073802217075,
+        "worst_gba": 0.6580246913580247,
+        "prompt_len": 1437
+      },
+      {
+        "softmin": 0.6873198855737557,
+        "worst_gba": 0.6267901234567901,
+        "prompt_len": 1385
+      },
+      {
+        "softmin": 0.6851304462044924,
+        "worst_gba": 0.6267901234567901,
+        "prompt_len": 1488
+      }
+    ],
+    "best_softmin": 0.6942073802217075,
+    "meta_prompt": "gpo_run_gpo.py"
+  },
+  "scorer_calls": 6300,
+  "optimizer_calls": 6
+}

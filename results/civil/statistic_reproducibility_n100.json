@@ -1,0 +1,116 @@
+{
+  "dataset": "civil",
+  "prompts": [
+    "s9:42_ape",
+    "s9:42_ape_k48",
+    "s9:42_apo",
+    "s9:42_evoprompt_de",
+    "s9:42_evoprompt_ga",
+    "s9:42_gepa",
+    "s9:42_gpo",
+    "s9:42_oracle",
+    "s9:42_prime",
+    "s9:42_random_al",
+    "s9:43_ape_k48",
+    "s9:43_ape_ut",
+    "s9:43_apo",
+    "s9:43_evoprompt_de",
+    "s9:43_evoprompt_ga",
+    "s9:43_gpo",
+    "s9:44_ape",
+    "s9:44_ape_k48",
+    "s9:44_ape_ut",
+    "s9:44_apo",
+    "s9:44_evoprompt_de",
+    "s9:44_evoprompt_ga",
+    "s9:44_gpo",
+    "s9:44_prime",
+    "s9:44_random_al",
+    "seed"
+  ],
+  "n_prompts": 26,
+  "n_pairs": 325,
+  "n_splits": 100,
+  "rows_per_cell_per_half": 100,
+  "n_boot": 300,
+  "seed": 0,
+  "statistics": {
+    "hard_min": {
+      "declared": 151,
+      "declared_share_pct": 0.4646153846153846,
+      "reproduced": 91,
+      "reproduced_share_pct": 60.264900662251655,
+      "sign_reversals": 0
+    },
+    "cvar25": {
+      "declared": 803,
+      "declared_share_pct": 2.4707692307692306,
+      "reproduced": 550,
+      "reproduced_share_pct": 68.4931506849315,
+      "sign_reversals": 3
+    },
+    "softmin_w0": {
+      "declared": 4810,
+      "declared_share_pct": 14.8,
+      "reproduced": 4173,
+      "reproduced_share_pct": 86.75675675675676,
+      "sign_reversals": 22
+    },
+    "softmin_w10": {
+      "declared": 5117,
+      "declared_share_pct": 15.744615384615384,
+      "reproduced": 4458,
+      "reproduced_share_pct": 87.12136017197577,
+      "sign_reversals": 24
+    },
+    "softmin_w20": {
+      "declared": 5385,
+      "declared_share_pct": 16.56923076923077,
+      "reproduced": 4719,
+      "reproduced_share_pct": 87.63231197771587,
+      "sign_reversals": 27
+    },
+    "softmin_w40": {
+      "declared": 5820,
+      "declared_share_pct": 17.907692307692308,
+      "reproduced": 5130,
+      "reproduced_share_pct": 88.14432989690722,
+      "sign_reversals": 28
+    },
+    "softmin_w80": {
+      "declared": 6383,
+      "declared_share_pct": 19.64,
+      "reproduced": 5647,
+      "reproduced_share_pct": 88.46937176876077,
+      "sign_reversals": 29
+    },
+    "softmin_w160": {
+      "declared": 6939,
+      "declared_share_pct": 21.35076923076923,
+      "reproduced": 6173,
+      "reproduced_share_pct": 88.96094538117885,
+      "sign_reversals": 29
+    },
+    "softmin_w320": {
+      "declared": 7325,
+      "declared_share_pct": 22.53846153846154,
+      "reproduced": 6527,
+      "reproduced_share_pct": 89.10580204778157,
+      "sign_reversals": 28
+    },
+    "mean_gba": {
+      "declared": 7522,
+      "declared_share_pct": 23.144615384615385,
+      "reproduced": 6697,
+      "reproduced_share_pct": 89.0321722946025,
+      "sign_reversals": 25
+    },
+    "worst_class": {
+      "declared": 25259,
+      "declared_share_pct": 77.72,
+      "reproduced": 25049,
+      "reproduced_share_pct": 99.16861316758383,
+      "sign_reversals": 6
+    }
+  }
+}

@@ -1,0 +1,253 @@
+{
+ "benchmarks": {
+  "toxlang": {
+   "main_rows": {
+    "n_rows": 2907,
+    "groups": {
+     "en": {
+      "n_rows": 421,
+      "ba_gemma": 0.9213404438016903,
+      "ba_gpt": 0.9536200117503503,
+      "agreement": 0.9477434679334917
+     },
+     "de": {
+      "n_rows": 498,
+      "ba_gemma": 0.7771084337349398,
+      "ba_gpt": 0.7771084337349398,
+      "agreement": 0.8795180722891566
+     },
+     "ru": {
+      "n_rows": 498,
+      "ba_gemma": 0.9718875502008032,
+      "ba_gpt": 0.9678714859437751,
+      "agreement": 0.9759036144578314
+     },
+     "ar": {
+      "n_rows": 498,
+      "ba_gemma": 0.7994032258064516,
+      "ba_gpt": 0.7877580645161291,
+      "agreement": 0.8514056224899599
+     },
+     "hi": {
+      "n_rows": 497,
+      "ba_gemma": 0.8186050654229822,
+      "ba_gpt": 0.8387906464567949,
+      "agreement": 0.9275653923541247
+     },
+     "am": {
+      "n_rows": 495,
+      "ba_gemma": 0.7209661094423403,
+      "ba_gpt": 0.7051717382786993,
+      "agreement": 0.7212121212121212
+     }
+    },
+    "summary": {
+     "mean_ba_gemma": 0.8348851380682012,
+     "mean_ba_gpt": 0.8383867301134481,
+     "target_group": "am",
+     "target_ba_gemma": 0.7209661094423403,
+     "target_ba_gpt": 0.7051717382786993,
+     "gemma": {
+      "worst": "am",
+      "worst_value": 0.7209661094423403,
+      "second_worst": "de",
+      "second_value": 0.7771084337349398,
+      "gap_second_minus_worst": 0.056142324292599466
+     },
+     "gpt": {
+      "worst": "am",
+      "worst_value": 0.7051717382786993,
+      "second_worst": "de",
+      "second_value": 0.7771084337349398,
+      "gap_second_minus_worst": 0.07193669545624048
+     },
+     "spearman_rho_tie_robust": 1.0,
+     "ba_range_gemma": [
+      0.7209661094423403,
+      0.9718875502008032
+     ],
+     "target_agreement": 0.7212121212121212,
+     "target_agreement_rank_from_lowest": 1
+    }
+   }
+  },
+  "mnli": {
+   "main_rows": {
+    "n_rows": 4991,
+    "groups": {
+     "facetoface": {
+      "n_rows": 500,
+      "ba_gemma": 0.874,
+      "ba_gpt": 0.9119999999999999,
+      "agreement": 0.93
+     },
+     "fiction": {
+      "n_rows": 499,
+      "ba_gemma": 0.885863453815261,
+      "ba_gpt": 0.8936947791164658,
+      "agreement": 0.8797595190380761
+     },
+     "government": {
+      "n_rows": 498,
+      "ba_gemma": 0.9135645161290322,
+      "ba_gpt": 0.9158548387096774,
+      "agreement": 0.9096385542168675
+     },
+     "letters": {
+      "n_rows": 499,
+      "ba_gemma": 0.9398714859437751,
+      "ba_gpt": 0.9279357429718875,
+      "agreement": 0.9318637274549099
+     },
+     "nineeleven": {
+      "n_rows": 499,
+      "ba_gemma": 0.9158232931726908,
+      "ba_gpt": 0.9219759036144578,
+      "agreement": 0.9018036072144289
+     },
+     "oup": {
+      "n_rows": 499,
+      "ba_gemma": 0.9159036144578313,
+      "ba_gpt": 0.9077028112449799,
+      "agreement": 0.8997995991983968
+     },
+     "slate": {
+      "n_rows": 499,
+      "ba_gemma": 0.8756706827309237,
+      "ba_gpt": 0.8859036144578313,
+      "agreement": 0.8657314629258517
+     },
+     "telephone": {
+      "n_rows": 500,
+      "ba_gemma": 0.8859999999999999,
+      "ba_gpt": 0.922,
+      "agreement": 0.892
+     },
+     "travel": {
+      "n_rows": 499,
+      "ba_gemma": 0.9238393574297189,
+      "ba_gpt": 0.9059678714859438,
+      "agreement": 0.9018036072144289
+     },
+     "verbatim": {
+      "n_rows": 499,
+      "ba_gemma": 0.8378232931726908,
+      "ba_gpt": 0.8876867469879519,
+      "agreement": 0.8416833667334669
+     }
+    },
+    "summary": {
+     "mean_ba_gemma": 0.8968359696851923,
+     "mean_ba_gpt": 0.9080722308589195,
+     "target_group": "verbatim",
+     "target_ba_gemma": 0.8378232931726908,
+     "target_ba_gpt": 0.8876867469879519,
+     "gemma": {
+      "worst": "verbatim",
+      "worst_value": 0.8378232931726908,
+      "second_worst": "facetoface",
+      "second_value": 0.874,
+      "gap_second_minus_worst": 0.036176706827309224
+     },
+     "gpt": {
+      "worst": "slate",
+      "worst_value": 0.8859036144578313,
+      "second_worst": "verbatim",
+      "second_value": 0.8876867469879519,
+      "gap_second_minus_worst": 0.0017831325301206347
+     },
+     "spearman_rho_tie_robust": 0.5515151515151515,
+     "ba_range_gemma": [
+      0.8378232931726908,
+      0.9398714859437751
+     ],
+     "target_agreement": 0.8416833667334669,
+     "target_agreement_rank_from_lowest": 1
+    }
+   }
+  },
+  "civil": {
+   "main_rows": {
+    "n_rows": 3584,
+    "groups": {
+     "male": {
+      "n_rows": 398,
+      "ba_gemma": 0.7010050251256281,
+      "ba_gpt": 0.6859296482412061,
+      "agreement": 0.8391959798994975
+     },
+     "female": {
+      "n_rows": 395,
+      "ba_gemma": 0.7466159052453469,
+      "ba_gpt": 0.7492308875557606,
+      "agreement": 0.8607594936708861
+     },
+     "LGBTQ": {
+      "n_rows": 400,
+      "ba_gemma": 0.6725000000000001,
+      "ba_gpt": 0.6725,
+      "agreement": 0.85
+     },
+     "christian": {
+      "n_rows": 398,
+      "ba_gemma": 0.8038131313131314,
+      "ba_gpt": 0.8138383838383838,
+      "agreement": 0.9195979899497487
+     },
+     "muslim": {
+      "n_rows": 399,
+      "ba_gemma": 0.7521482412060301,
+      "ba_gpt": 0.7446859296482412,
+      "agreement": 0.8621553884711779
+     },
+     "other_religions": {
+      "n_rows": 397,
+      "ba_gemma": 0.714758883248731,
+      "ba_gpt": 0.757753807106599,
+      "agreement": 0.8816120906801007
+     },
+     "black": {
+      "n_rows": 399,
+      "ba_gemma": 0.6770603015075377,
+      "ba_gpt": 0.6543467336683417,
+      "agreement": 0.8771929824561403
+     },
+     "white": {
+      "n_rows": 400,
+      "ba_gemma": 0.665,
+      "ba_gpt": 0.6875,
+      "agreement": 0.8525
+     }
+    },
+    "summary": {
+     "mean_ba_gemma": 0.7166126859558006,
+     "mean_ba_gpt": 0.7207231737573165,
+     "target_group": "white",
+     "target_ba_gemma": 0.665,
+     "target_ba_gpt": 0.6875,
+     "gemma": {
+      "worst": "white",
+      "worst_value": 0.665,
+      "second_worst": "LGBTQ",
+      "second_value": 0.6725000000000001,
+      "gap_second_minus_worst": 0.007500000000000062
+     },
+     "gpt": {
+      "worst": "black",
+      "worst_value": 0.6543467336683417,
+      "second_worst": "LGBTQ",
+      "second_value": 0.6725,
+      "gap_second_minus_worst": 0.018153266331658258
+     },
+     "spearman_rho_tie_robust": 0.7380952380952381,
+     "ba_range_gemma": [
+      0.665,
+      0.8038131313131314
+     ],
+     "target_agreement": 0.8525,
+     "target_agreement_rank_from_lowest": 3
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "stand": "mnli",
+ "set": "truth_mnli",
+ "n_pairs": 9,
+ "kinds": {
+  "recovered": 9,
+  "content": 0,
+  "transport": 0
+ },
+ "pairs": [
+  {
+   "prompt": "r15:thr_p50",
+   "row": 872,
+   "group": 3,
+   "gold": 1,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p50",
+   "row": 878,
+   "group": 10,
+   "gold": 0,
+   "raw": "Label: 0",
+   "label": 0,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p50",
+   "row": 879,
+   "group": 4,
+   "gold": 1,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p60",
+   "row": 840,
+   "group": 6,
+   "gold": 0,
+   "raw": "0",
+   "label": 0,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p60",
+   "row": 841,
+   "group": 5,
+   "gold": 1,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p60",
+   "row": 847,
+   "group": 3,
+   "gold": 1,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p70",
+   "row": 514,
+   "group": 9,
+   "gold": 1,
+   "raw": "Label: 1",
+   "label": 1,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p70",
+   "row": 515,
+   "group": 7,
+   "gold": 1,
+   "raw": "Label: 0",
+   "label": 0,
+   "kind": "recovered"
+  },
+  {
+   "prompt": "r15:thr_p70",
+   "row": 516,
+   "group": 2,
+   "gold": 0,
+   "raw": "Label: 0",
+   "label": 0,
+   "kind": "recovered"
+  }
+ ]
+}

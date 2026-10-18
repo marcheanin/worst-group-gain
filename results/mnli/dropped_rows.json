@@ -1,0 +1,24 @@
+{
+ "dropped": 9,
+ "total": 5000,
+ "pairs_requeried": 9,
+ "kinds": {
+  "recovered": 9,
+  "content": 0,
+  "transport": 0
+ },
+ "as_reported": {
+  "rows": 4991,
+  "holm": 2,
+  "best_gain": 0.03794377510040159,
+  "rc_p": 0.014,
+  "noise_ceiling": 0.030024096385542154
+ },
+ "recovered": {
+  "rows": 5000,
+  "holm": 2,
+  "best_gain": 0.03799999999999992,
+  "rc_p": 0.01,
+  "noise_ceiling": 0.030000000000000027
+ }
+}

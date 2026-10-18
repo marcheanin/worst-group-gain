@@ -1,0 +1,70 @@
+{
+  "best_prompt": "# Task\n**Decision flow:**\n1. Does the comment contain direct personal attacks (e.g., name-calling like \"liar,\" \"idiot,\" \"moron,\" or other degrading labels) aimed at specific individuals or named entities? \u2192 toxic, even if framed as policy criticism.\n2. Does the comment use slurs, hostile epithets, or explicitly hateful expressions targeting a person or group based on identity? \u2192 toxic.\n3. Does the comment employ sarcasm, veiled insults, or dismissive humor that clearly targets and demeans a specific person or group (e.g., \"make like a tree and get outta here\" directed at a company/entity as a hostile taunt)? \u2192 toxic. If the sarcasm is directed purely at ideas, policies, or systems without dehumanizing individuals, it is non-toxic.\n4. Does the comment criticize policies, institutions, ideologies, or actions (even sharply) without stripping the humanity of their adherents? \u2192 non-toxic. However, if the criticism is inseparable from a personal attack on an individual (e.g., \"this idiot's policy is...\"), the personal attack makes it toxic.\n5. Does the comment issue broad negative generalizations that stereotype or frame entire identity groups as inherently flawed, dangerous, or subhuman? \u2192 toxic. Descriptive statements about a specific subset or behavior (e.g., \"predators\" as a behavioral category, not an identity group) that do not paint a whole protected group as uniformly bad are non-toxic.\n6. In ambiguous cases, default to non-toxic (0) unless there is unmistakable hostile intent toward people.\n\n**Fundamental principles:**\n- Critiquing institutions, doctrines, governments, or policies is non-toxic, but attaching degrading personal labels to individuals in the process (e.g., \"pathological liar,\" \"this idiot\") turns it toxic.\n- Mentioning identity terms by themselves does not signal toxicity.\n- Sarcasm and veiled insults are toxic when they function as personal or group-directed slights, not when mocking ideas or systems without targeting people.\n- Blanket statements that paint whole groups as uniformly bad, dangerous, or primitive are toxic, even without slurs. Describing a behavioral subset (e.g., criminals, predators) without equating it to an entire identity group is not a blanket generalization.\n- Rhetorical questions about policies or systems are non-toxic; rhetorical questions that perpetuate group stereotypes are toxic.\n\n# Output format\nOutput exactly 'Label: 0' or 'Label: 1'.\n\n# Prediction\nText: {review}\nLabel:\n",
+  "n_candidates": 4,
+  "trace": {
+    "method": "apo_protegi",
+    "rounds": 2,
+    "beam_size": 4,
+    "opt": {
+      "minibatch_size": 64,
+      "n_gradients": 4,
+      "errors_per_gradient": 4,
+      "gradients_per_error": 1,
+      "steps_per_gradient": 1,
+      "mc_samples_per_step": 2,
+      "max_expansion_factor": 8,
+      "reject_on_errors": false
+    },
+    "history": [
+      {
+        "round": 0,
+        "beam_train_softmin": [
+          0.691406631305122
+        ],
+        "beam_lens": [
+          651
+        ]
+      },
+      {
+        "round": 1,
+        "beam_train_softmin": [
+          0.7400324537212594,
+          0.7327300057847426,
+          0.7260179512696852,
+          0.7246808654355991
+        ],
+        "beam_lens": [
+          1359,
+          1548,
+          1177,
+          1330
+        ]
+      },
+      {
+        "round": 2,
+        "beam_train_softmin": [
+          0.7434518951518254,
+          0.7361404772481345,
+          0.7340371953272262,
+          0.7260179512696852
+        ],
+        "beam_lens": [
+          1359,
+          2461,
+          1548,
+          1177
+        ]
+      }
+    ],
+    "dev_softmin_beam": [
+      0.6917661707990459,
+      0.6999838090863048,
+      0.6929744242440888,
+      0.6752429702321286
+    ],
+    "best_softmin": 0.6999838090863048,
+    "upstream": "baselines/_upstream/LMOps/prompt_optimization"
+  },
+  "scorer_calls": 40460,
+  "optimizer_calls": 140
+}

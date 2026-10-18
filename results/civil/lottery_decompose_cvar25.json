@@ -1,0 +1,142 @@
+{
+  "win_point": {
+    "allocation": {
+      "share": 0.09201358764210085,
+      "means": {
+        "targeted": 0.5156944444444443,
+        "uniform": 0.43402777777777785
+      }
+    },
+    "statistic": {
+      "share": 0.4907955541030657,
+      "means": {
+        "cvar_k2": 0.5062500000000001,
+        "global_acc": 0.34791666666666665,
+        "hard_min": 0.49916666666666676,
+        "mean_gba": 0.39791666666666664,
+        "softmin_w40": 0.4520833333333334,
+        "worst_class": 0.6458333333333334
+      }
+    },
+    "length penalty": {
+      "share": 0.07588917406425279,
+      "means": {
+        "0.0": 0.43777777777777777,
+        "0.00025": 0.5119444444444444
+      }
+    },
+    "tie rule": {
+      "share": 0.0015206789988747925,
+      "means": {
+        "first": 0.47937499999999994,
+        "random": 0.47770833333333335,
+        "shortest": 0.46749999999999997
+      }
+    }
+  },
+  "win_sig": {
+    "allocation": {
+      "share": 0.0,
+      "means": {
+        "targeted": 0.0,
+        "uniform": 0.0
+      }
+    },
+    "statistic": {
+      "share": 0.0,
+      "means": {
+        "cvar_k2": 0.0,
+        "global_acc": 0.0,
+        "hard_min": 0.0,
+        "mean_gba": 0.0,
+        "softmin_w40": 0.0,
+        "worst_class": 0.0
+      }
+    },
+    "length penalty": {
+      "share": 0.0,
+      "means": {
+        "0.0": 0.0,
+        "0.00025": 0.0
+      }
+    },
+    "tie rule": {
+      "share": 0.0,
+      "means": {
+        "first": 0.0,
+        "random": 0.0,
+        "shortest": 0.0
+      }
+    }
+  },
+  "win_holm": {
+    "allocation": {
+      "share": 0.0,
+      "means": {
+        "targeted": 0.0,
+        "uniform": 0.0
+      }
+    },
+    "statistic": {
+      "share": 0.0,
+      "means": {
+        "cvar_k2": 0.0,
+        "global_acc": 0.0,
+        "hard_min": 0.0,
+        "mean_gba": 0.0,
+        "softmin_w40": 0.0,
+        "worst_class": 0.0
+      }
+    },
+    "length penalty": {
+      "share": 0.0,
+      "means": {
+        "0.0": 0.0,
+        "0.00025": 0.0
+      }
+    },
+    "tie rule": {
+      "share": 0.0,
+      "means": {
+        "first": 0.0,
+        "random": 0.0,
+        "shortest": 0.0
+      }
+    }
+  },
+  "mean_published": {
+    "allocation": {
+      "share": 0.0009017001286144929,
+      "means": {
+        "targeted": 0.6678606042364601,
+        "uniform": 0.6680358598548297
+      }
+    },
+    "statistic": {
+      "share": 0.8146587721701878,
+      "means": {
+        "cvar_k2": 0.6671030778894473,
+        "global_acc": 0.6655073047529313,
+        "hard_min": 0.666512882118928,
+        "mean_gba": 0.6670647429857622,
+        "softmin_w40": 0.6678868038107203,
+        "worst_class": 0.6736145807160803
+      }
+    },
+    "length penalty": {
+      "share": 0.03317321225415932,
+      "means": {
+        "0.0": 0.6674167303531547,
+        "0.00025": 0.6684797337381352
+      }
+    },
+    "tie rule": {
+      "share": 0.0009513443471374211,
+      "means": {
+        "first": 0.6679834498010889,
+        "random": 0.6680365564803182,
+        "shortest": 0.6678246898555278
+      }
+    }
+  }
+}

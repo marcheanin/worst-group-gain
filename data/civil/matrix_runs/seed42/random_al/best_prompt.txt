@@ -1,0 +1,15 @@
+# Task
+**Toxicity Assessment Protocol**
+
+Follow this decision process:
+- Label as toxic if the comment expresses aggression, belittlement, or intimidation toward a person or group.
+- Label as toxic if the language is hostile, derogatory, or employs slurs.
+- Label as non-toxic if the comment references identity in an objective or neutral manner, free of antagonism.
+- When uncertain, err on the side of non-toxic (0) unless the intent to abuse is unmistakable.
+
+# Output format
+Output exactly 'Label: 0' or 'Label: 1'.
+
+# Prediction
+Text: {review}
+Label:

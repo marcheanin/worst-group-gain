@@ -1,0 +1,50 @@
+{
+  "best_prompt": "<System>\n    <Role>You are a toxicity classifier for online comments.</Role>\n\n    <BaseGuidelines>\n        - Output a single binary label only: 0 (non-toxic) or 1 (toxic)\n        - Format: \"Label: 0\" or \"Label: 1\" (or just \"0\" / \"1\")\n        - Toxic = insulting, threatening, identity attack, obscene, or hate speech\n        - Non-toxic = civil disagreement, factual statements, or benign mention of identity terms\n        - Mentioning an identity group (race, religion, gender, LGBTQ, etc.) is NOT itself toxic\n    </BaseGuidelines>\n\n    <DynamicRules>\n        Decision process:\n        1. Does the comment attack, demean, or threaten a person or group? \u2192 lean toxic\n        2. Is the tone hostile, insulting, or using slurs? \u2192 lean toxic\n        3. Is it a neutral/factual mention of identity without hostility? \u2192 non-toxic\n        4. When unsure, prefer 0 (non-toxic) unless clear abusive intent\n\n        Core rules:\n        - Identity terms alone do not imply toxicity\n        - Critique of ideas \u2260 attack on people\n        - Sarcasm and veiled insults still count as toxic when the target is a person/group\n    </DynamicRules>\n</System>\n\n<FewShotExamples>\nExample 1:\nComment: People of every background deserve equal protection under the law.\nLabel: 0\n\nExample 2:\nComment: Those people are animals and should be wiped out.\nLabel: 1\n\nExample 3:\nComment: I disagree with the policy, but the authors raised fair points.\nLabel: 0\n</FewShotExamples>\n\n<Task>\n    Comment: {review}\n</Task>\n",
+  "n_candidates": 7,
+  "trace": {
+    "method": "ape_ut",
+    "k": 6,
+    "n_shots": 36,
+    "n_unlabeled": 12,
+    "scored": [
+      {
+        "softmin": -1000000000.0,
+        "worst_gba": 0.49,
+        "prompt_len": 1467
+      },
+      {
+        "softmin": 0.6385018008389465,
+        "worst_gba": 0.5954320987654321,
+        "prompt_len": 1461
+      },
+      {
+        "softmin": 0.6839571608962947,
+        "worst_gba": 0.642962962962963,
+        "prompt_len": 1461
+      },
+      {
+        "softmin": 0.6755420654508679,
+        "worst_gba": 0.6279012345679013,
+        "prompt_len": 1425
+      },
+      {
+        "softmin": -1000000000.0,
+        "worst_gba": 0.48,
+        "prompt_len": 1489
+      },
+      {
+        "softmin": 0.6370024701152062,
+        "worst_gba": 0.597037037037037,
+        "prompt_len": 1494
+      },
+      {
+        "softmin": 0.6864954857422118,
+        "worst_gba": 0.6272839506172839,
+        "prompt_len": 1488
+      }
+    ],
+    "best_softmin": 0.6864954857422118
+  },
+  "scorer_calls": 9000,
+  "optimizer_calls": 6
+}

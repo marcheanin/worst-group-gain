@@ -1,0 +1,50 @@
+{
+ "leverage_main_rows": {
+  "rows": 3186,
+  "worst_class_response": 0.036808765622324956,
+  "hard_min_response_real": 0.00700319780721789,
+  "hard_min_response_pseudo_median": 0.006167199634536274,
+  "leverage_real": 5.255993995255677,
+  "leverage_pseudo": 5.9684731812792515
+ },
+ "leverage_before_search": {
+  "rows": 3188,
+  "worst_class_response": 0.036808765622324956,
+  "hard_min_response_real": 0.00700319780721789,
+  "hard_min_response_pseudo_median": 0.0071208314298766735,
+  "leverage_real": 5.255993995255677,
+  "leverage_pseudo": 5.16916682901486
+ },
+ "edits_vs_finals": {
+  "edits": {
+   "n": 11,
+   "disagree_with_seed": 0.039899553571428575,
+   "half_width": 0.01766440962483148
+  },
+  "finals": {
+   "n": 25,
+   "disagree_with_seed": 0.08881696428571428,
+   "half_width": 0.02842040717547128
+  }
+ },
+ "gap": [
+  {
+   "grouping": "real8",
+   "k": 8,
+   "gap": 0.007500000000000062,
+   "holm": 0
+  },
+  {
+   "grouping": "sem3",
+   "k": 3,
+   "gap": 0.03558034058114157,
+   "holm": 0
+  },
+  {
+   "grouping": "sem2_relig",
+   "k": 2,
+   "gap": 0.06484985166797852,
+   "holm": 0
+  }
+ ]
+}

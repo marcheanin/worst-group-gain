@@ -1,0 +1,40 @@
+{
+ "rows": 3584,
+ "finals": 25,
+ "target_group_id": 8,
+ "reps": 500,
+ "rows_by": {
+  "target": {
+   "rho_cross": 0.035659439734814544,
+   "half_rho_gemma": 0.2325906951245284,
+   "rel_gemma": 0.3774013483056998,
+   "half_rho_gpt": -0.19431361305768965,
+   "rel_gpt": 0.0,
+   "rho_ceiling": 0.0
+  },
+  "hard_min": {
+   "rho_cross": 0.2571382833783778,
+   "half_rho_gemma": 0.19763378778722843,
+   "rel_gemma": 0.3300404344008705,
+   "half_rho_gpt": 0.042029496412359584,
+   "rel_gpt": 0.08066853492547847,
+   "rho_ceiling": 0.1631682515359122
+  },
+  "worst_class": {
+   "rho_cross": 0.2828010773374375,
+   "half_rho_gemma": 0.9740831478585439,
+   "rel_gemma": 0.9868714485661,
+   "half_rho_gpt": 0.9179598720006027,
+   "rel_gpt": 0.9572253157132938,
+   "rho_ceiling": 0.9719353548061315
+  },
+  "mean_gba": {
+   "rho_cross": 0.16307692307692304,
+   "half_rho_gemma": 0.6689967034225849,
+   "rel_gemma": 0.8016752843797522,
+   "half_rho_gpt": 0.460844812823776,
+   "rel_gpt": 0.6309291839603066,
+   "rho_ceiling": 0.7111964095626916
+  }
+ }
+}

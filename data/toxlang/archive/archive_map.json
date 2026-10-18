@@ -1,0 +1,3337 @@
+{
+ "n_runs": 12,
+ "n_unique": 138,
+ "n_new": 128,
+ "set": "truth_tox",
+ "rows": 1000,
+ "runs": [
+  {
+   "run": "42_ape__hard_min",
+   "method": "ape",
+   "seed": 42,
+   "final": "s15:42_ape__hard_min",
+   "candidates": [
+    {
+     "name": "arc:33a156338c",
+     "hash": "7fcc9c315cdd",
+     "evals": [
+      {
+       "rows": 900,
+       "selected_on": 0.78059,
+       "rejected": null,
+       "R_soft_min_gba": 0.78059,
+       "R_worst_gba": 0.78059,
+       "R_gba_mean": 0.82068,
+       "R_global": 0.82556,
+       "R_worst_group": 0.75969,
+       "toxic_recall": 0.83333,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.50778
+      }
+     ]
+    },
+    {
+     "name": "arc:1394b21a36",
+     "hash": "3b8f8d1e1b97",
+     "evals": [
+      {
+       "rows": 900,
+       "selected_on": 0.77986,
+       "rejected": null,
+       "R_soft_min_gba": 0.77986,
+       "R_worst_gba": 0.77986,
+       "R_gba_mean": 0.82784,
+       "R_global": 0.83222,
+       "R_worst_group": 0.75969,
+       "toxic_recall": 0.87778,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.54556
+      }
+     ]
+    },
+    {
+     "name": "arc:0757722fda",
+     "hash": "b5cc9d4d0c9a",
+     "evals": [
+      {
+       "rows": 900,
+       "selected_on": 0.55896,
+       "rejected": null,
+       "R_soft_min_gba": 0.55896,
+       "R_worst_gba": 0.55896,
+       "R_gba_mean": 0.63133,
+       "R_global": 0.63,
+       "R_worst_group": 0.48125,
+       "toxic_recall": 0.96667,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.83667
+      }
+     ]
+    },
+    {
+     "name": "arc:2c9438dc62",
+     "hash": "561802934e89",
+     "evals": [
+      {
+       "rows": 900,
+       "selected_on": 0.73923,
+       "rejected": null,
+       "R_soft_min_gba": 0.73923,
+       "R_worst_gba": 0.73923,
+       "R_gba_mean": 0.8047,
+       "R_global": 0.81111,
+       "R_worst_group": 0.71014,
+       "toxic_recall": 0.71778,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.40667
+      }
+     ]
+    },
+    {
+     "name": "s15:42_ape__hard_min",
+     "hash": "3e2eadf051c9",
+     "evals": [
+      {
+       "rows": 900,
+       "selected_on": 0.79552,
+       "rejected": null,
+       "R_soft_min_gba": 0.79552,
+       "R_worst_gba": 0.79552,
+       "R_gba_mean": 0.8316,
+       "R_global": 0.83556,
+       "R_worst_group": 0.76087,
+       "toxic_recall": 0.80889,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.47333
+      }
+     ]
+    },
+    {
+     "name": "arc:83fc1f5c47",
+     "hash": "5b4e3f8e33ab",
+     "evals": [
+      {
+       "rows": 900,
+       "selected_on": 0.76261,
+       "rejected": null,
+       "R_soft_min_gba": 0.76261,
+       "R_worst_gba": 0.76261,
+       "R_gba_mean": 0.82062,
+       "R_global": 0.82667,
+       "R_worst_group": 0.75,
+       "toxic_recall": 0.78444,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.45778
+      }
+     ]
+    },
+    {
+     "name": "seed",
+     "hash": "99066a101f5a",
+     "evals": [
+      {
+       "rows": 900,
+       "selected_on": 0.77788,
+       "rejected": null,
+       "R_soft_min_gba": 0.77788,
+       "R_worst_gba": 0.77788,
+       "R_gba_mean": 0.82065,
+       "R_global": 0.82667,
+       "R_worst_group": 0.75194,
+       "toxic_recall": 0.80222,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.47556
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "run": "42_apo__hard_min",
+   "method": "apo",
+   "seed": 42,
+   "final": "s15:42_apo__hard_min",
+   "candidates": [
+    {
+     "name": "s15:44_apo__hard_min",
+     "hash": "475b5745f1bf",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.827,
+       "rejected": null,
+       "R_soft_min_gba": 0.827,
+       "R_worst_gba": 0.827,
+       "R_gba_mean": 0.8588,
+       "R_global": 0.8588,
+       "R_worst_group": 0.79167,
+       "toxic_recall": 0.88889,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.53009
+      },
+      {
+       "rows": 432,
+       "selected_on": 0.82334,
+       "rejected": null,
+       "R_soft_min_gba": 0.82334,
+       "R_worst_gba": 0.82334,
+       "R_gba_mean": 0.85185,
+       "R_global": 0.85185,
+       "R_worst_group": 0.79167,
+       "toxic_recall": 0.88426,
+       "invalid_rate": 0.00694,
+       "pred_pos_rate": 0.53147
+      },
+      {
+       "rows": 432,
+       "selected_on": 0.8348,
+       "rejected": null,
+       "R_soft_min_gba": 0.8348,
+       "R_worst_gba": 0.8348,
+       "R_gba_mean": 0.86111,
+       "R_global": 0.86111,
+       "R_worst_group": 0.80556,
+       "toxic_recall": 0.89352,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.53241
+      },
+      {
+       "rows": 900,
+       "selected_on": 0.77516,
+       "rejected": null,
+       "R_soft_min_gba": 0.77516,
+       "R_worst_gba": 0.77516,
+       "R_gba_mean": 0.83197,
+       "R_global": 0.83556,
+       "R_worst_group": 0.74522,
+       "toxic_recall": 0.87556,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.54
+      }
+     ]
+    },
+    {
+     "name": "arc:bcb90e0003",
+     "hash": "c9b79b6a6f84",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.65278,
+       "R_gba_mean": 0.79398,
+       "R_global": 0.79398,
+       "R_worst_group": 0.65278,
+       "toxic_recall": 0.78241,
+       "invalid_rate": 0.03704,
+       "pred_pos_rate": 0.48798
+      },
+      {
+       "rows": 432,
+       "selected_on": 0.76925,
+       "rejected": null,
+       "R_soft_min_gba": 0.76925,
+       "R_worst_gba": 0.76925,
+       "R_gba_mean": 0.82407,
+       "R_global": 0.82407,
+       "R_worst_group": 0.70833,
+       "toxic_recall": 0.80556,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.48148
+      }
+     ]
+    },
+    {
+     "name": "arc:6679bac9fc",
+     "hash": "56a2f1c7931c",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.33333,
+       "R_gba_mean": 0.52778,
+       "R_global": 0.52778,
+       "R_worst_group": 0.33333,
+       "toxic_recall": 0.38426,
+       "invalid_rate": 0.38657,
+       "pred_pos_rate": 0.36226
+      },
+      {
+       "rows": 432,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.33333,
+       "R_gba_mean": 0.53009,
+       "R_global": 0.53009,
+       "R_worst_group": 0.33333,
+       "toxic_recall": 0.37963,
+       "invalid_rate": 0.37963,
+       "pred_pos_rate": 0.35821
+      }
+     ]
+    },
+    {
+     "name": "arc:2130a8749c",
+     "hash": "ba921d846f71",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.51633,
+       "rejected": null,
+       "R_soft_min_gba": 0.51633,
+       "R_worst_gba": 0.51633,
+       "R_gba_mean": 0.58102,
+       "R_global": 0.58102,
+       "R_worst_group": 0.44444,
+       "toxic_recall": 0.75463,
+       "invalid_rate": 0.01157,
+       "pred_pos_rate": 0.67916
+      }
+     ]
+    },
+    {
+     "name": "arc:373735d040",
+     "hash": "fa74890d866a",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.77948,
+       "rejected": null,
+       "R_soft_min_gba": 0.77948,
+       "R_worst_gba": 0.77948,
+       "R_gba_mean": 0.83102,
+       "R_global": 0.83102,
+       "R_worst_group": 0.72222,
+       "toxic_recall": 0.81019,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.47917
+      },
+      {
+       "rows": 900,
+       "selected_on": 0.71762,
+       "rejected": null,
+       "R_soft_min_gba": 0.71762,
+       "R_worst_gba": 0.71762,
+       "R_gba_mean": 0.79955,
+       "R_global": 0.80778,
+       "R_worst_group": 0.7,
+       "toxic_recall": 0.79333,
+       "invalid_rate": 0.00111,
+       "pred_pos_rate": 0.4861
+      }
+     ]
+    },
+    {
+     "name": "arc:b54a3ef732",
+     "hash": "35cdf367feb0",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.54313,
+       "rejected": null,
+       "R_soft_min_gba": 0.54313,
+       "R_worst_gba": 0.54313,
+       "R_gba_mean": 0.56944,
+       "R_global": 0.56944,
+       "R_worst_group": 0.51389,
+       "toxic_recall": 0.98148,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.91204
+      }
+     ]
+    },
+    {
+     "name": "arc:97dd37ab41",
+     "hash": "4c19ac9548ef",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.55044,
+       "rejected": null,
+       "R_soft_min_gba": 0.55044,
+       "R_worst_gba": 0.55044,
+       "R_gba_mean": 0.58333,
+       "R_global": 0.58333,
+       "R_worst_group": 0.51389,
+       "toxic_recall": 0.94444,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.86111
+      }
+     ]
+    },
+    {
+     "name": "arc:6fa72afcaf",
+     "hash": "3c17a476fd02",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.77047,
+       "rejected": null,
+       "R_soft_min_gba": 0.77047,
+       "R_worst_gba": 0.77047,
+       "R_gba_mean": 0.82639,
+       "R_global": 0.82639,
+       "R_worst_group": 0.70833,
+       "toxic_recall": 0.85185,
+       "invalid_rate": 0.00231,
+       "pred_pos_rate": 0.52436
+      }
+     ]
+    },
+    {
+     "name": "arc:6fad8c5988",
+     "hash": "4bb0b680efb9",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.41667,
+       "R_gba_mean": 0.52546,
+       "R_global": 0.52546,
+       "R_worst_group": 0.41667,
+       "toxic_recall": 0.09722,
+       "invalid_rate": 0.06481,
+       "pred_pos_rate": 0.05446
+      }
+     ]
+    },
+    {
+     "name": "arc:74baa15c30",
+     "hash": "fbbbf9edd9a5",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.52802,
+       "rejected": null,
+       "R_soft_min_gba": 0.52802,
+       "R_worst_gba": 0.52802,
+       "R_gba_mean": 0.55324,
+       "R_global": 0.55324,
+       "R_worst_group": 0.5,
+       "toxic_recall": 0.93519,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.88194
+      }
+     ]
+    },
+    {
+     "name": "arc:7c8557bc2e",
+     "hash": "2a9768580e53",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.52851,
+       "rejected": null,
+       "R_soft_min_gba": 0.52851,
+       "R_worst_gba": 0.52851,
+       "R_gba_mean": 0.54167,
+       "R_global": 0.54167,
+       "R_worst_group": 0.51389,
+       "toxic_recall": 0.98611,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.94444
+      }
+     ]
+    },
+    {
+     "name": "s15:42_apo__hard_min",
+     "hash": "0c93463476a6",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.79557,
+       "rejected": null,
+       "R_soft_min_gba": 0.79557,
+       "R_worst_gba": 0.79557,
+       "R_gba_mean": 0.82407,
+       "R_global": 0.82407,
+       "R_worst_group": 0.76389,
+       "toxic_recall": 0.85648,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.53241
+      },
+      {
+       "rows": 900,
+       "selected_on": 0.77554,
+       "rejected": null,
+       "R_soft_min_gba": 0.77554,
+       "R_worst_gba": 0.77554,
+       "R_gba_mean": 0.81814,
+       "R_global": 0.82444,
+       "R_worst_group": 0.75159,
+       "toxic_recall": 0.86444,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.54
+      }
+     ]
+    },
+    {
+     "name": "arc:359779717c",
+     "hash": "fed72457f7ca",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.59064,
+       "rejected": null,
+       "R_soft_min_gba": 0.59064,
+       "R_worst_gba": 0.59064,
+       "R_gba_mean": 0.65972,
+       "R_global": 0.65972,
+       "R_worst_group": 0.51389,
+       "toxic_recall": 0.47222,
+       "invalid_rate": 0.00694,
+       "pred_pos_rate": 0.31469
+      }
+     ]
+    },
+    {
+     "name": "arc:ed1f71498b",
+     "hash": "74c2b42e9181",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.77997,
+       "rejected": null,
+       "R_soft_min_gba": 0.77997,
+       "R_worst_gba": 0.77997,
+       "R_gba_mean": 0.81944,
+       "R_global": 0.81944,
+       "R_worst_group": 0.73611,
+       "toxic_recall": 0.85185,
+       "invalid_rate": 0.00463,
+       "pred_pos_rate": 0.53023
+      },
+      {
+       "rows": 900,
+       "selected_on": 0.77071,
+       "rejected": null,
+       "R_soft_min_gba": 0.77071,
+       "R_worst_gba": 0.77071,
+       "R_gba_mean": 0.81918,
+       "R_global": 0.82333,
+       "R_worst_group": 0.75,
+       "toxic_recall": 0.88,
+       "invalid_rate": 0.00667,
+       "pred_pos_rate": 0.55481
+      }
+     ]
+    },
+    {
+     "name": "arc:a671a3c0c3",
+     "hash": "ca2acf52885d",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.51535,
+       "rejected": null,
+       "R_soft_min_gba": 0.51535,
+       "R_worst_gba": 0.51535,
+       "R_gba_mean": 0.54167,
+       "R_global": 0.54167,
+       "R_worst_group": 0.48611,
+       "toxic_recall": 0.96296,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.9213
+      }
+     ]
+    },
+    {
+     "name": "arc:6df9f964ea",
+     "hash": "628d4aad3085",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.5134,
+       "rejected": null,
+       "R_soft_min_gba": 0.5134,
+       "R_worst_gba": 0.5134,
+       "R_gba_mean": 0.52546,
+       "R_global": 0.52546,
+       "R_worst_group": 0.5,
+       "toxic_recall": 0.98611,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.96065
+      }
+     ]
+    },
+    {
+     "name": "arc:4501e74c21",
+     "hash": "106b166f61cf",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.08333,
+       "R_gba_mean": 0.22222,
+       "R_global": 0.22222,
+       "R_worst_group": 0.08333,
+       "toxic_recall": 0.23148,
+       "invalid_rate": 0.73843,
+       "pred_pos_rate": 0.51327
+      }
+     ]
+    },
+    {
+     "name": "arc:d29efe5dda",
+     "hash": "cec10b391720",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.375,
+       "R_gba_mean": 0.50926,
+       "R_global": 0.50926,
+       "R_worst_group": 0.375,
+       "toxic_recall": 0.08796,
+       "invalid_rate": 0.0625,
+       "pred_pos_rate": 0.04938
+      }
+     ]
+    },
+    {
+     "name": "arc:c4694cad2f",
+     "hash": "1ddd0b9d0c58",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.36111,
+       "R_gba_mean": 0.54167,
+       "R_global": 0.54167,
+       "R_worst_group": 0.36111,
+       "toxic_recall": 0.14352,
+       "invalid_rate": 0.04861,
+       "pred_pos_rate": 0.07543
+      }
+     ]
+    },
+    {
+     "name": "arc:38882f4a43",
+     "hash": "2bc7e5de7251",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.48611,
+       "R_gba_mean": 0.61111,
+       "R_global": 0.61111,
+       "R_worst_group": 0.48611,
+       "toxic_recall": 0.55556,
+       "invalid_rate": 0.27083,
+       "pred_pos_rate": 0.42222
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "run": "42_evoprompt_de__hard_min",
+   "method": "evoprompt_de",
+   "seed": 42,
+   "final": "s15:42_evoprompt_de__hard_min",
+   "candidates": [
+    {
+     "name": "seed",
+     "hash": "99066a101f5a",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": 0.78888,
+       "rejected": null,
+       "R_soft_min_gba": 0.78888,
+       "R_worst_gba": 0.78888,
+       "R_gba_mean": 0.82887,
+       "R_global": 0.842,
+       "R_worst_group": 0.75556,
+       "toxic_recall": 0.82305,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.472
+      }
+     ]
+    },
+    {
+     "name": "s15:42_evoprompt_de__hard_min",
+     "hash": "ab729773c5d0",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": 0.80633,
+       "rejected": null,
+       "R_soft_min_gba": 0.80633,
+       "R_worst_gba": 0.80633,
+       "R_gba_mean": 0.82591,
+       "R_global": 0.832,
+       "R_worst_group": 0.77778,
+       "toxic_recall": 0.89712,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.554
+      },
+      {
+       "rows": 900,
+       "selected_on": 0.77945,
+       "rejected": null,
+       "R_soft_min_gba": 0.77945,
+       "R_worst_gba": 0.77945,
+       "R_gba_mean": 0.81869,
+       "R_global": 0.82333,
+       "R_worst_group": 0.75796,
+       "toxic_recall": 0.87778,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.55444
+      }
+     ]
+    },
+    {
+     "name": "arc:18f3b1247a",
+     "hash": "cb3d5e4237b1",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": 0.79988,
+       "rejected": null,
+       "R_soft_min_gba": 0.79988,
+       "R_worst_gba": 0.79988,
+       "R_gba_mean": 0.82338,
+       "R_global": 0.832,
+       "R_worst_group": 0.77778,
+       "toxic_recall": 0.88889,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.546
+      }
+     ]
+    },
+    {
+     "name": "arc:b5078081c8",
+     "hash": "bbb609165d9d",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.22174,
+       "R_gba_mean": 0.45905,
+       "R_global": 0.454,
+       "R_worst_group": 0.2093,
+       "toxic_recall": 0.61728,
+       "invalid_rate": 0.456,
+       "pred_pos_rate": 0.66544
+      }
+     ]
+    },
+    {
+     "name": "arc:73c82524d4",
+     "hash": "3888adedfe01",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.51304,
+       "R_gba_mean": 0.68209,
+       "R_global": 0.682,
+       "R_worst_group": 0.5,
+       "toxic_recall": 0.7572,
+       "invalid_rate": 0.174,
+       "pred_pos_rate": 0.54479
+      }
+     ]
+    },
+    {
+     "name": "arc:990d6e6649",
+     "hash": "80c174001f5e",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.0,
+       "R_global": 0.0,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.0,
+       "invalid_rate": 1.0,
+       "pred_pos_rate": 0.0
+      }
+     ]
+    },
+    {
+     "name": "arc:0f2b62d9a4",
+     "hash": "585b28a81de7",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.0,
+       "R_global": 0.0,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.0,
+       "invalid_rate": 1.0,
+       "pred_pos_rate": 0.0
+      }
+     ]
+    },
+    {
+     "name": "arc:75fc40a3d2",
+     "hash": "a916d11a2f72",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": 0.78074,
+       "rejected": null,
+       "R_soft_min_gba": 0.78074,
+       "R_worst_gba": 0.78074,
+       "R_gba_mean": 0.81693,
+       "R_global": 0.82,
+       "R_worst_group": 0.74157,
+       "toxic_recall": 0.9177,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.586
+      }
+     ]
+    },
+    {
+     "name": "arc:08132c29c7",
+     "hash": "91c5df07b7bd",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.00185,
+       "R_global": 0.002,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.0,
+       "invalid_rate": 0.998,
+       "pred_pos_rate": 0.0
+      }
+     ]
+    },
+    {
+     "name": "arc:61dac08c97",
+     "hash": "f025a49e34e4",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.00198,
+       "R_global": 0.002,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.00412,
+       "invalid_rate": 0.998,
+       "pred_pos_rate": 1.0
+      }
+     ]
+    },
+    {
+     "name": "arc:0af610db50",
+     "hash": "389b5200905f",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": 0.76145,
+       "rejected": null,
+       "R_soft_min_gba": 0.76145,
+       "R_worst_gba": 0.76145,
+       "R_gba_mean": 0.81228,
+       "R_global": 0.822,
+       "R_worst_group": 0.72222,
+       "toxic_recall": 0.8107,
+       "invalid_rate": 0.006,
+       "pred_pos_rate": 0.48089
+      }
+     ]
+    },
+    {
+     "name": "arc:b3baf96619",
+     "hash": "ccbee1d8dab1",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": 0.7723,
+       "rejected": null,
+       "R_soft_min_gba": 0.7723,
+       "R_worst_gba": 0.7723,
+       "R_gba_mean": 0.81445,
+       "R_global": 0.818,
+       "R_worst_group": 0.71111,
+       "toxic_recall": 0.93004,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.6
+      }
+     ]
+    },
+    {
+     "name": "arc:dbafc2b86d",
+     "hash": "87af3ad34553",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.0,
+       "R_global": 0.0,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.0,
+       "invalid_rate": 1.0,
+       "pred_pos_rate": 0.0
+      }
+     ]
+    },
+    {
+     "name": "arc:9c31a7a91c",
+     "hash": "9540c9ae460f",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.00727,
+       "R_global": 0.008,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.00412,
+       "invalid_rate": 0.992,
+       "pred_pos_rate": 0.25
+      }
+     ]
+    },
+    {
+     "name": "arc:3a3bc1628b",
+     "hash": "7a3a3d254068",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.00751,
+       "R_global": 0.008,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.00823,
+       "invalid_rate": 0.986,
+       "pred_pos_rate": 0.28571
+      }
+     ]
+    },
+    {
+     "name": "arc:c58f5fbfc3",
+     "hash": "ee5595736577",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": 0.74358,
+       "rejected": null,
+       "R_soft_min_gba": 0.74358,
+       "R_worst_gba": 0.74358,
+       "R_gba_mean": 0.81253,
+       "R_global": 0.824,
+       "R_worst_group": 0.7,
+       "toxic_recall": 0.74897,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.418
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "run": "42_gepa__hard_min",
+   "method": "gepa",
+   "seed": 42,
+   "final": "s15:42_gepa__hard_min",
+   "candidates": [
+    {
+     "name": "seed",
+     "hash": "99066a101f5a",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": 0.77807,
+       "rejected": null,
+       "R_soft_min_gba": 0.77807,
+       "R_worst_gba": 0.77807,
+       "R_gba_mean": 0.82423,
+       "R_global": 0.8325,
+       "R_worst_group": 0.72973,
+       "toxic_recall": 0.80693,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.4775
+      }
+     ]
+    },
+    {
+     "name": "arc:b38e911ed3",
+     "hash": "698223b1e51d",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": 0.77223,
+       "rejected": null,
+       "R_soft_min_gba": 0.77223,
+       "R_worst_gba": 0.77223,
+       "R_gba_mean": 0.82809,
+       "R_global": 0.825,
+       "R_worst_group": 0.72973,
+       "toxic_recall": 0.73267,
+       "invalid_rate": 0.005,
+       "pred_pos_rate": 0.40955
+      }
+     ]
+    },
+    {
+     "name": "arc:a1d32b9e02",
+     "hash": "aa83adb20523",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": 0.72311,
+       "rejected": null,
+       "R_soft_min_gba": 0.72311,
+       "R_worst_gba": 0.72311,
+       "R_gba_mean": 0.80027,
+       "R_global": 0.805,
+       "R_worst_group": 0.66216,
+       "toxic_recall": 0.69307,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.39
+      }
+     ]
+    },
+    {
+     "name": "s15:42_gepa__hard_min",
+     "hash": "89cdce1bd64a",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": 0.80072,
+       "rejected": null,
+       "R_soft_min_gba": 0.80072,
+       "R_worst_gba": 0.80072,
+       "R_gba_mean": 0.83434,
+       "R_global": 0.8425,
+       "R_worst_group": 0.74324,
+       "toxic_recall": 0.91584,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.5775
+      },
+      {
+       "rows": 900,
+       "selected_on": 0.77117,
+       "rejected": null,
+       "R_soft_min_gba": 0.77117,
+       "R_worst_gba": 0.77117,
+       "R_gba_mean": 0.82896,
+       "R_global": 0.83111,
+       "R_worst_group": 0.75194,
+       "toxic_recall": 0.90889,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.57778
+      }
+     ]
+    },
+    {
+     "name": "arc:8223c5bf93",
+     "hash": "0790e95ec1fc",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.0,
+       "R_global": 0.0,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.0,
+       "invalid_rate": 1.0,
+       "pred_pos_rate": 0.0
+      }
+     ]
+    },
+    {
+     "name": "arc:06ace0258b",
+     "hash": "c440b1a2ff18",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.06264,
+       "R_global": 0.0625,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.07921,
+       "invalid_rate": 0.9225,
+       "pred_pos_rate": 0.58065
+      }
+     ]
+    },
+    {
+     "name": "arc:f7c513e7d8",
+     "hash": "7b15993f57d4",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": 0.73896,
+       "rejected": null,
+       "R_soft_min_gba": 0.73896,
+       "R_worst_gba": 0.73896,
+       "R_gba_mean": 0.82513,
+       "R_global": 0.8225,
+       "R_worst_group": 0.62162,
+       "toxic_recall": 0.93069,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.6125
+      }
+     ]
+    },
+    {
+     "name": "arc:610ed06ed1",
+     "hash": "979bb2f02b45",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.02949,
+       "R_gba_mean": 0.17717,
+       "R_global": 0.175,
+       "R_worst_group": 0.02899,
+       "toxic_recall": 0.15347,
+       "invalid_rate": 0.7375,
+       "pred_pos_rate": 0.31429
+      }
+     ]
+    },
+    {
+     "name": "arc:baa3c731a2",
+     "hash": "46a1f92a9f00",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0119,
+       "R_gba_mean": 0.04353,
+       "R_global": 0.045,
+       "R_worst_group": 0.01351,
+       "toxic_recall": 0.0396,
+       "invalid_rate": 0.9525,
+       "pred_pos_rate": 0.47368
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "run": "43_ape__hard_min",
+   "method": "ape",
+   "seed": 43,
+   "final": "s15:43_ape__hard_min",
+   "candidates": [
+    {
+     "name": "arc:65fb2034a6",
+     "hash": "b96ed7fc67be",
+     "evals": [
+      {
+       "rows": 900,
+       "selected_on": 0.77835,
+       "rejected": null,
+       "R_soft_min_gba": 0.77835,
+       "R_worst_gba": 0.77835,
+       "R_gba_mean": 0.82802,
+       "R_global": 0.83222,
+       "R_worst_group": 0.75159,
+       "toxic_recall": 0.89111,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.55889
+      }
+     ]
+    },
+    {
+     "name": "arc:e70785f406",
+     "hash": "3c8fe90538da",
+     "evals": [
+      {
+       "rows": 900,
+       "selected_on": 0.78305,
+       "rejected": null,
+       "R_soft_min_gba": 0.78305,
+       "R_worst_gba": 0.78305,
+       "R_gba_mean": 0.82245,
+       "R_global": 0.82778,
+       "R_worst_group": 0.76087,
+       "toxic_recall": 0.80667,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.47889
+      }
+     ]
+    },
+    {
+     "name": "arc:7994128b68",
+     "hash": "41460af66286",
+     "evals": [
+      {
+       "rows": 900,
+       "selected_on": 0.71101,
+       "rejected": null,
+       "R_soft_min_gba": 0.71101,
+       "R_worst_gba": 0.71101,
+       "R_gba_mean": 0.78415,
+       "R_global": 0.79,
+       "R_worst_group": 0.69565,
+       "toxic_recall": 0.64444,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.35444
+      }
+     ]
+    },
+    {
+     "name": "arc:71510a8639",
+     "hash": "c336b5d41959",
+     "evals": [
+      {
+       "rows": 900,
+       "selected_on": 0.74654,
+       "rejected": null,
+       "R_soft_min_gba": 0.74654,
+       "R_worst_gba": 0.74654,
+       "R_gba_mean": 0.80763,
+       "R_global": 0.81444,
+       "R_worst_group": 0.72868,
+       "toxic_recall": 0.74222,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.42778
+      }
+     ]
+    },
+    {
+     "name": "arc:f26e8d185e",
+     "hash": "69908adf7426",
+     "evals": [
+      {
+       "rows": 900,
+       "selected_on": 0.72111,
+       "rejected": null,
+       "R_soft_min_gba": 0.72111,
+       "R_worst_gba": 0.72111,
+       "R_gba_mean": 0.79984,
+       "R_global": 0.80556,
+       "R_worst_group": 0.70625,
+       "toxic_recall": 0.70444,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.39889
+      }
+     ]
+    },
+    {
+     "name": "s15:43_ape__hard_min",
+     "hash": "232afe075afe",
+     "evals": [
+      {
+       "rows": 900,
+       "selected_on": 0.78547,
+       "rejected": null,
+       "R_soft_min_gba": 0.78547,
+       "R_worst_gba": 0.78547,
+       "R_gba_mean": 0.82974,
+       "R_global": 0.83333,
+       "R_worst_group": 0.76744,
+       "toxic_recall": 0.87556,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.54222
+      }
+     ]
+    },
+    {
+     "name": "seed",
+     "hash": "99066a101f5a",
+     "evals": [
+      {
+       "rows": 900,
+       "selected_on": 0.77788,
+       "rejected": null,
+       "R_soft_min_gba": 0.77788,
+       "R_worst_gba": 0.77788,
+       "R_gba_mean": 0.82065,
+       "R_global": 0.82667,
+       "R_worst_group": 0.75194,
+       "toxic_recall": 0.80222,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.47556
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "run": "43_apo__hard_min",
+   "method": "apo",
+   "seed": 43,
+   "final": "s15:43_apo__hard_min",
+   "candidates": [
+    {
+     "name": "s15:44_apo__hard_min",
+     "hash": "475b5745f1bf",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.78728,
+       "rejected": null,
+       "R_soft_min_gba": 0.78728,
+       "R_worst_gba": 0.78728,
+       "R_gba_mean": 0.83333,
+       "R_global": 0.83333,
+       "R_worst_group": 0.73611,
+       "toxic_recall": 0.89815,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.56481
+      },
+      {
+       "rows": 432,
+       "selected_on": 0.77827,
+       "rejected": null,
+       "R_soft_min_gba": 0.77827,
+       "R_worst_gba": 0.77827,
+       "R_gba_mean": 0.8287,
+       "R_global": 0.8287,
+       "R_worst_group": 0.72222,
+       "toxic_recall": 0.89352,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.56481
+      },
+      {
+       "rows": 432,
+       "selected_on": 0.77827,
+       "rejected": null,
+       "R_soft_min_gba": 0.77827,
+       "R_worst_gba": 0.77827,
+       "R_gba_mean": 0.8287,
+       "R_global": 0.8287,
+       "R_worst_group": 0.72222,
+       "toxic_recall": 0.89352,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.56481
+      },
+      {
+       "rows": 900,
+       "selected_on": 0.77936,
+       "rejected": null,
+       "R_soft_min_gba": 0.77936,
+       "R_worst_gba": 0.77936,
+       "R_gba_mean": 0.83191,
+       "R_global": 0.83556,
+       "R_worst_group": 0.75159,
+       "toxic_recall": 0.87556,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.54
+      }
+     ]
+    },
+    {
+     "name": "arc:b8eafe2478",
+     "hash": "1057b1925770",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.63426,
+       "rejected": null,
+       "R_soft_min_gba": 0.63426,
+       "R_worst_gba": 0.63426,
+       "R_gba_mean": 0.71759,
+       "R_global": 0.71759,
+       "R_worst_group": 0.54167,
+       "toxic_recall": 0.76389,
+       "invalid_rate": 0.00231,
+       "pred_pos_rate": 0.54524
+      },
+      {
+       "rows": 432,
+       "selected_on": 0.6367,
+       "rejected": null,
+       "R_soft_min_gba": 0.6367,
+       "R_worst_gba": 0.6367,
+       "R_gba_mean": 0.72222,
+       "R_global": 0.72222,
+       "R_worst_group": 0.54167,
+       "toxic_recall": 0.76852,
+       "invalid_rate": 0.00231,
+       "pred_pos_rate": 0.54524
+      },
+      {
+       "rows": 900,
+       "selected_on": 0.59816,
+       "rejected": null,
+       "R_soft_min_gba": 0.59816,
+       "R_worst_gba": 0.59816,
+       "R_gba_mean": 0.68992,
+       "R_global": 0.7,
+       "R_worst_group": 0.54777,
+       "toxic_recall": 0.76,
+       "invalid_rate": 0.00222,
+       "pred_pos_rate": 0.56125
+      }
+     ]
+    },
+    {
+     "name": "arc:0ba35dd486",
+     "hash": "d8cb74b2a0fb",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.34722,
+       "R_gba_mean": 0.59954,
+       "R_global": 0.59954,
+       "R_worst_group": 0.34722,
+       "toxic_recall": 0.53704,
+       "invalid_rate": 0.30787,
+       "pred_pos_rate": 0.47157
+      },
+      {
+       "rows": 432,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.34722,
+       "R_gba_mean": 0.59722,
+       "R_global": 0.59722,
+       "R_worst_group": 0.34722,
+       "toxic_recall": 0.53241,
+       "invalid_rate": 0.31481,
+       "pred_pos_rate": 0.46622
+      }
+     ]
+    },
+    {
+     "name": "arc:d28475c72b",
+     "hash": "d119762a16c6",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.55482,
+       "rejected": null,
+       "R_soft_min_gba": 0.55482,
+       "R_worst_gba": 0.55482,
+       "R_gba_mean": 0.60417,
+       "R_global": 0.60417,
+       "R_worst_group": 0.5,
+       "toxic_recall": 0.64352,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.53935
+      }
+     ]
+    },
+    {
+     "name": "arc:74baa15c30",
+     "hash": "fbbbf9edd9a5",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.548,
+       "rejected": null,
+       "R_soft_min_gba": 0.548,
+       "R_worst_gba": 0.548,
+       "R_gba_mean": 0.5787,
+       "R_global": 0.5787,
+       "R_worst_group": 0.51389,
+       "toxic_recall": 0.96759,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.88889
+      }
+     ]
+    },
+    {
+     "name": "arc:122ceecd32",
+     "hash": "9309e96206c2",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.53972,
+       "rejected": null,
+       "R_soft_min_gba": 0.53972,
+       "R_worst_gba": 0.53972,
+       "R_gba_mean": 0.58796,
+       "R_global": 0.58796,
+       "R_worst_group": 0.48611,
+       "toxic_recall": 0.29167,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.2037
+      }
+     ]
+    },
+    {
+     "name": "arc:0a9f2781ce",
+     "hash": "d4664fd0703f",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.52437,
+       "rejected": null,
+       "R_soft_min_gba": 0.52437,
+       "R_worst_gba": 0.52437,
+       "R_gba_mean": 0.5463,
+       "R_global": 0.5463,
+       "R_worst_group": 0.5,
+       "toxic_recall": 0.99074,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.94444
+      }
+     ]
+    },
+    {
+     "name": "arc:14944dcb6d",
+     "hash": "a17f91ca391c",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.7076,
+       "rejected": null,
+       "R_soft_min_gba": 0.7076,
+       "R_worst_gba": 0.7076,
+       "R_gba_mean": 0.81944,
+       "R_global": 0.81944,
+       "R_worst_group": 0.58333,
+       "toxic_recall": 0.77778,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.45833
+      },
+      {
+       "rows": 900,
+       "selected_on": 0.729,
+       "rejected": null,
+       "R_soft_min_gba": 0.729,
+       "R_worst_gba": 0.729,
+       "R_gba_mean": 0.8051,
+       "R_global": 0.81333,
+       "R_worst_group": 0.71875,
+       "toxic_recall": 0.76889,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.45556
+      }
+     ]
+    },
+    {
+     "name": "arc:372ab9d003",
+     "hash": "90e0f368d826",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.52193,
+       "rejected": null,
+       "R_soft_min_gba": 0.52193,
+       "R_worst_gba": 0.52193,
+       "R_gba_mean": 0.54167,
+       "R_global": 0.54167,
+       "R_worst_group": 0.5,
+       "toxic_recall": 0.10185,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.06019
+      }
+     ]
+    },
+    {
+     "name": "arc:bb335ae233",
+     "hash": "922338b1a826",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.375,
+       "R_gba_mean": 0.50694,
+       "R_global": 0.50694,
+       "R_worst_group": 0.375,
+       "toxic_recall": 0.08333,
+       "invalid_rate": 0.11111,
+       "pred_pos_rate": 0.05729
+      }
+     ]
+    },
+    {
+     "name": "arc:96d5bed5c2",
+     "hash": "8f95e55dca21",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": -1000000000.0,
+       "rejected": "degenerate",
+       "R_worst_gba": 0.5,
+       "R_gba_mean": 0.5,
+       "R_global": 0.5,
+       "R_worst_group": 0.5,
+       "toxic_recall": 0.0,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.0
+      }
+     ]
+    },
+    {
+     "name": "s15:43_apo__hard_min",
+     "hash": "7b033804157d",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.77412,
+       "rejected": null,
+       "R_soft_min_gba": 0.77412,
+       "R_worst_gba": 0.77412,
+       "R_gba_mean": 0.83333,
+       "R_global": 0.83333,
+       "R_worst_group": 0.70833,
+       "toxic_recall": 0.87037,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.53704
+      },
+      {
+       "rows": 900,
+       "selected_on": 0.78131,
+       "rejected": null,
+       "R_soft_min_gba": 0.78131,
+       "R_worst_gba": 0.78131,
+       "R_gba_mean": 0.82726,
+       "R_global": 0.83444,
+       "R_worst_group": 0.75969,
+       "toxic_recall": 0.88,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.54556
+      }
+     ]
+    },
+    {
+     "name": "arc:f4aad6b60e",
+     "hash": "c7a33c181e0b",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.56774,
+       "rejected": null,
+       "R_soft_min_gba": 0.56774,
+       "R_worst_gba": 0.56774,
+       "R_gba_mean": 0.6412,
+       "R_global": 0.6412,
+       "R_worst_group": 0.48611,
+       "toxic_recall": 0.69907,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.55787
+      }
+     ]
+    },
+    {
+     "name": "arc:3a804bbcb8",
+     "hash": "3d7615f02132",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": -1000000000.0,
+       "rejected": "degenerate",
+       "R_worst_gba": 0.5,
+       "R_gba_mean": 0.5,
+       "R_global": 0.5,
+       "R_worst_group": 0.5,
+       "toxic_recall": 1.0,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 1.0
+      }
+     ]
+    },
+    {
+     "name": "arc:fe8ca18b5e",
+     "hash": "cbc2c52f1559",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.50877,
+       "rejected": null,
+       "R_soft_min_gba": 0.50877,
+       "R_worst_gba": 0.50877,
+       "R_gba_mean": 0.54167,
+       "R_global": 0.54167,
+       "R_worst_group": 0.47222,
+       "toxic_recall": 0.15741,
+       "invalid_rate": 0.00926,
+       "pred_pos_rate": 0.11682
+      }
+     ]
+    },
+    {
+     "name": "arc:b54a3ef732",
+     "hash": "35cdf367feb0",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.55702,
+       "rejected": null,
+       "R_soft_min_gba": 0.55702,
+       "R_worst_gba": 0.55702,
+       "R_gba_mean": 0.58333,
+       "R_global": 0.58333,
+       "R_worst_group": 0.52778,
+       "toxic_recall": 0.99537,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.91204
+      }
+     ]
+    },
+    {
+     "name": "arc:9167a2a49b",
+     "hash": "78459522035f",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.57383,
+       "rejected": null,
+       "R_soft_min_gba": 0.57383,
+       "R_worst_gba": 0.57383,
+       "R_gba_mean": 0.65278,
+       "R_global": 0.65278,
+       "R_worst_group": 0.48611,
+       "toxic_recall": 0.53704,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.38426
+      }
+     ]
+    },
+    {
+     "name": "arc:1f43fe7bef",
+     "hash": "c337c1f8cde2",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.52096,
+       "rejected": null,
+       "R_soft_min_gba": 0.52096,
+       "R_worst_gba": 0.52096,
+       "R_gba_mean": 0.56481,
+       "R_global": 0.56481,
+       "R_worst_group": 0.47222,
+       "toxic_recall": 0.93981,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.875
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "run": "43_evoprompt_de__hard_min",
+   "method": "evoprompt_de",
+   "seed": 43,
+   "final": "seed",
+   "candidates": [
+    {
+     "name": "seed",
+     "hash": "99066a101f5a",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": 0.78086,
+       "rejected": null,
+       "R_soft_min_gba": 0.78086,
+       "R_worst_gba": 0.78086,
+       "R_gba_mean": 0.81435,
+       "R_global": 0.822,
+       "R_worst_group": 0.74684,
+       "toxic_recall": 0.80078,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.486
+      },
+      {
+       "rows": 900,
+       "selected_on": 0.77788,
+       "rejected": null,
+       "R_soft_min_gba": 0.77788,
+       "R_worst_gba": 0.77788,
+       "R_gba_mean": 0.82065,
+       "R_global": 0.82667,
+       "R_worst_group": 0.75194,
+       "toxic_recall": 0.80222,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.47556
+      }
+     ]
+    },
+    {
+     "name": "arc:8f77becb4f",
+     "hash": "10af718a9977",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.07186,
+       "R_gba_mean": 0.37804,
+       "R_global": 0.392,
+       "R_worst_group": 0.06667,
+       "toxic_recall": 0.56641,
+       "invalid_rate": 0.48,
+       "pred_pos_rate": 0.78462
+      }
+     ]
+    },
+    {
+     "name": "arc:b65891d968",
+     "hash": "0f16cdc643c7",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.20652,
+       "R_gba_mean": 0.36746,
+       "R_global": 0.37,
+       "R_worst_group": 0.20652,
+       "toxic_recall": 0.72266,
+       "invalid_rate": 0.322,
+       "pred_pos_rate": 1.0
+      }
+     ]
+    },
+    {
+     "name": "arc:1ff5c75d82",
+     "hash": "882eb0123c66",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.0,
+       "R_global": 0.0,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.0,
+       "invalid_rate": 1.0,
+       "pred_pos_rate": 0.0
+      }
+     ]
+    },
+    {
+     "name": "arc:14f6e19417",
+     "hash": "83f07ee91a79",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.01288,
+       "R_global": 0.014,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.02734,
+       "invalid_rate": 0.986,
+       "pred_pos_rate": 1.0
+      }
+     ]
+    },
+    {
+     "name": "arc:6729cf73cc",
+     "hash": "a512f2cb4510",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": 0.73144,
+       "rejected": null,
+       "R_soft_min_gba": 0.73144,
+       "R_worst_gba": 0.73144,
+       "R_gba_mean": 0.79702,
+       "R_global": 0.806,
+       "R_worst_group": 0.68889,
+       "toxic_recall": 0.73438,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.434
+      }
+     ]
+    },
+    {
+     "name": "arc:bdec13f42f",
+     "hash": "2c5bb19bebd8",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.0,
+       "R_global": 0.0,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.0,
+       "invalid_rate": 1.0,
+       "pred_pos_rate": 0.0
+      }
+     ]
+    },
+    {
+     "name": "arc:fdeb09dcce",
+     "hash": "281eda176a5e",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": 0.73972,
+       "rejected": null,
+       "R_soft_min_gba": 0.73972,
+       "R_worst_gba": 0.73972,
+       "R_gba_mean": 0.80051,
+       "R_global": 0.808,
+       "R_worst_group": 0.7,
+       "toxic_recall": 0.73438,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.432
+      }
+     ]
+    },
+    {
+     "name": "arc:b239d0fac3",
+     "hash": "811907bb122e",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": 0.74066,
+       "rejected": null,
+       "R_soft_min_gba": 0.74066,
+       "R_worst_gba": 0.74066,
+       "R_gba_mean": 0.80635,
+       "R_global": 0.814,
+       "R_worst_group": 0.7,
+       "toxic_recall": 0.74219,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.434
+      }
+     ]
+    },
+    {
+     "name": "arc:d3fb9b9f35",
+     "hash": "4b504091a510",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.0,
+       "R_global": 0.0,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.0,
+       "invalid_rate": 1.0,
+       "pred_pos_rate": 0.0
+      }
+     ]
+    },
+    {
+     "name": "arc:8102643e10",
+     "hash": "0c0073aa51f0",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": 0.74605,
+       "rejected": null,
+       "R_soft_min_gba": 0.74605,
+       "R_worst_gba": 0.74605,
+       "R_gba_mean": 0.80193,
+       "R_global": 0.81,
+       "R_worst_group": 0.71111,
+       "toxic_recall": 0.73438,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.43
+      }
+     ]
+    },
+    {
+     "name": "arc:da36c284fe",
+     "hash": "69845909ba13",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.0,
+       "R_global": 0.0,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.0,
+       "invalid_rate": 1.0,
+       "pred_pos_rate": 0.0
+      }
+     ]
+    },
+    {
+     "name": "arc:602ec66197",
+     "hash": "1d508963ce8b",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.0,
+       "R_global": 0.0,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.0,
+       "invalid_rate": 1.0,
+       "pred_pos_rate": 0.0
+      }
+     ]
+    },
+    {
+     "name": "arc:8012285931",
+     "hash": "b63d5f12cff9",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.0,
+       "R_global": 0.0,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.0,
+       "invalid_rate": 1.0,
+       "pred_pos_rate": 0.0
+      }
+     ]
+    },
+    {
+     "name": "arc:24c907f8ab",
+     "hash": "6d526728ecb1",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.0,
+       "R_global": 0.0,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.0,
+       "invalid_rate": 1.0,
+       "pred_pos_rate": 0.0
+      }
+     ]
+    },
+    {
+     "name": "arc:b45d8a3e10",
+     "hash": "8a00e58b1f19",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.0,
+       "R_global": 0.0,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.0,
+       "invalid_rate": 1.0,
+       "pred_pos_rate": 0.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "run": "43_gepa__hard_min",
+   "method": "gepa",
+   "seed": 43,
+   "final": "s15:43_gepa__hard_min",
+   "candidates": [
+    {
+     "name": "seed",
+     "hash": "99066a101f5a",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": 0.79129,
+       "rejected": null,
+       "R_soft_min_gba": 0.79129,
+       "R_worst_gba": 0.79129,
+       "R_gba_mean": 0.8233,
+       "R_global": 0.8325,
+       "R_worst_group": 0.75676,
+       "toxic_recall": 0.80882,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.4825
+      }
+     ]
+    },
+    {
+     "name": "arc:39ce1c91dd",
+     "hash": "fe589d9ecab4",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": 0.67209,
+       "rejected": null,
+       "R_soft_min_gba": 0.67209,
+       "R_worst_gba": 0.67209,
+       "R_gba_mean": 0.79967,
+       "R_global": 0.79,
+       "R_worst_group": 0.51351,
+       "toxic_recall": 0.83824,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.555
+      }
+     ]
+    },
+    {
+     "name": "arc:e3cc4fe03f",
+     "hash": "c06e4f001a88",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": 0.71153,
+       "rejected": null,
+       "R_soft_min_gba": 0.71153,
+       "R_worst_gba": 0.71153,
+       "R_gba_mean": 0.8014,
+       "R_global": 0.805,
+       "R_worst_group": 0.63514,
+       "toxic_recall": 0.73039,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.43
+      }
+     ]
+    },
+    {
+     "name": "arc:497ab54af2",
+     "hash": "11b9e28ff6b3",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": 0.79566,
+       "rejected": null,
+       "R_soft_min_gba": 0.79566,
+       "R_worst_gba": 0.79566,
+       "R_gba_mean": 0.83954,
+       "R_global": 0.845,
+       "R_worst_group": 0.72973,
+       "toxic_recall": 0.88725,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.55
+      }
+     ]
+    },
+    {
+     "name": "arc:6c3ce7d4c5",
+     "hash": "d4e3bcb72baa",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": 0.72145,
+       "rejected": null,
+       "R_soft_min_gba": 0.72145,
+       "R_worst_gba": 0.72145,
+       "R_gba_mean": 0.80915,
+       "R_global": 0.8175,
+       "R_worst_group": 0.64865,
+       "toxic_recall": 0.70098,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.3875
+      }
+     ]
+    },
+    {
+     "name": "arc:372c851ec6",
+     "hash": "65b98f116837",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": 0.6535,
+       "rejected": null,
+       "R_soft_min_gba": 0.6535,
+       "R_worst_gba": 0.6535,
+       "R_gba_mean": 0.72922,
+       "R_global": 0.7325,
+       "R_worst_group": 0.57576,
+       "toxic_recall": 0.5,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.2675
+      }
+     ]
+    },
+    {
+     "name": "arc:9c394a280c",
+     "hash": "d0f80eac03b5",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": 0.66179,
+       "rejected": null,
+       "R_soft_min_gba": 0.66179,
+       "R_worst_gba": 0.66179,
+       "R_gba_mean": 0.73707,
+       "R_global": 0.745,
+       "R_worst_group": 0.54545,
+       "toxic_recall": 0.51961,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.275
+      }
+     ]
+    },
+    {
+     "name": "s15:43_gepa__hard_min",
+     "hash": "63c41f2ef522",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": 0.8032,
+       "rejected": null,
+       "R_soft_min_gba": 0.8032,
+       "R_worst_gba": 0.8032,
+       "R_gba_mean": 0.84019,
+       "R_global": 0.84,
+       "R_worst_group": 0.75758,
+       "toxic_recall": 0.83333,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.5
+      },
+      {
+       "rows": 900,
+       "selected_on": 0.77293,
+       "rejected": null,
+       "R_soft_min_gba": 0.77293,
+       "R_worst_gba": 0.77293,
+       "R_gba_mean": 0.82704,
+       "R_global": 0.82667,
+       "R_worst_group": 0.74419,
+       "toxic_recall": 0.82222,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.49556
+      }
+     ]
+    },
+    {
+     "name": "arc:cc5d1ca28b",
+     "hash": "25199e1f74a7",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.30952,
+       "R_gba_mean": 0.63606,
+       "R_global": 0.6275,
+       "R_worst_group": 0.35135,
+       "toxic_recall": 0.35294,
+       "invalid_rate": 0.0925,
+       "pred_pos_rate": 0.2011
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "run": "44_ape__hard_min",
+   "method": "ape",
+   "seed": 44,
+   "final": "seed",
+   "candidates": [
+    {
+     "name": "arc:9c586ede05",
+     "hash": "c7a56d6ed140",
+     "evals": [
+      {
+       "rows": 900,
+       "selected_on": 0.70928,
+       "rejected": null,
+       "R_soft_min_gba": 0.70928,
+       "R_worst_gba": 0.70928,
+       "R_gba_mean": 0.7899,
+       "R_global": 0.79556,
+       "R_worst_group": 0.69565,
+       "toxic_recall": 0.65556,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.36
+      }
+     ]
+    },
+    {
+     "name": "arc:9c07bcdf4b",
+     "hash": "1217556afa66",
+     "evals": [
+      {
+       "rows": 900,
+       "selected_on": 0.7782,
+       "rejected": null,
+       "R_soft_min_gba": 0.7782,
+       "R_worst_gba": 0.7782,
+       "R_gba_mean": 0.82547,
+       "R_global": 0.83,
+       "R_worst_group": 0.75796,
+       "toxic_recall": 0.88444,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.55444
+      }
+     ]
+    },
+    {
+     "name": "arc:9abe915479",
+     "hash": "68809a812a91",
+     "evals": [
+      {
+       "rows": 900,
+       "selected_on": 0.72651,
+       "rejected": null,
+       "R_soft_min_gba": 0.72651,
+       "R_worst_gba": 0.72651,
+       "R_gba_mean": 0.80486,
+       "R_global": 0.81222,
+       "R_worst_group": 0.7125,
+       "toxic_recall": 0.74222,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.43
+      }
+     ]
+    },
+    {
+     "name": "arc:e3fe6b838e",
+     "hash": "df047fe2a6d4",
+     "evals": [
+      {
+       "rows": 900,
+       "selected_on": 0.75023,
+       "rejected": null,
+       "R_soft_min_gba": 0.75023,
+       "R_worst_gba": 0.75023,
+       "R_gba_mean": 0.80366,
+       "R_global": 0.81111,
+       "R_worst_group": 0.72464,
+       "toxic_recall": 0.74444,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.43333
+      }
+     ]
+    },
+    {
+     "name": "arc:8cb295f8aa",
+     "hash": "3ec24f22ff54",
+     "evals": [
+      {
+       "rows": 900,
+       "selected_on": 0.77659,
+       "rejected": null,
+       "R_soft_min_gba": 0.77659,
+       "R_worst_gba": 0.77659,
+       "R_gba_mean": 0.82545,
+       "R_global": 0.82889,
+       "R_worst_group": 0.73188,
+       "toxic_recall": 0.78222,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.45333
+      }
+     ]
+    },
+    {
+     "name": "arc:c26e9d9f71",
+     "hash": "01d1ca51a560",
+     "evals": [
+      {
+       "rows": 900,
+       "selected_on": 0.51647,
+       "rejected": null,
+       "R_soft_min_gba": 0.51647,
+       "R_worst_gba": 0.51647,
+       "R_gba_mean": 0.54693,
+       "R_global": 0.54333,
+       "R_worst_group": 0.43125,
+       "toxic_recall": 0.98667,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.94333
+      }
+     ]
+    },
+    {
+     "name": "seed",
+     "hash": "99066a101f5a",
+     "evals": [
+      {
+       "rows": 900,
+       "selected_on": 0.77827,
+       "rejected": null,
+       "R_soft_min_gba": 0.77827,
+       "R_worst_gba": 0.77827,
+       "R_gba_mean": 0.82209,
+       "R_global": 0.82778,
+       "R_worst_group": 0.75969,
+       "toxic_recall": 0.80222,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.47444
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "run": "44_apo__hard_min",
+   "method": "apo",
+   "seed": 44,
+   "final": "s15:44_apo__hard_min",
+   "candidates": [
+    {
+     "name": "s15:44_apo__hard_min",
+     "hash": "475b5745f1bf",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.77412,
+       "rejected": null,
+       "R_soft_min_gba": 0.77412,
+       "R_worst_gba": 0.77412,
+       "R_gba_mean": 0.83333,
+       "R_global": 0.83333,
+       "R_worst_group": 0.70833,
+       "toxic_recall": 0.86111,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.52778
+      },
+      {
+       "rows": 432,
+       "selected_on": 0.77412,
+       "rejected": null,
+       "R_soft_min_gba": 0.77412,
+       "R_worst_gba": 0.77412,
+       "R_gba_mean": 0.83333,
+       "R_global": 0.83333,
+       "R_worst_group": 0.70833,
+       "toxic_recall": 0.86111,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.52778
+      },
+      {
+       "rows": 432,
+       "selected_on": 0.77412,
+       "rejected": null,
+       "R_soft_min_gba": 0.77412,
+       "R_worst_gba": 0.77412,
+       "R_gba_mean": 0.83333,
+       "R_global": 0.83333,
+       "R_worst_group": 0.70833,
+       "toxic_recall": 0.86111,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.52778
+      },
+      {
+       "rows": 900,
+       "selected_on": 0.77973,
+       "rejected": null,
+       "R_soft_min_gba": 0.77973,
+       "R_worst_gba": 0.77973,
+       "R_gba_mean": 0.83303,
+       "R_global": 0.83667,
+       "R_worst_group": 0.75159,
+       "toxic_recall": 0.87778,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.54111
+      }
+     ]
+    },
+    {
+     "name": "arc:a2ae7dcfe9",
+     "hash": "a5a09c698970",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.74951,
+       "rejected": null,
+       "R_soft_min_gba": 0.74951,
+       "R_worst_gba": 0.74951,
+       "R_gba_mean": 0.82407,
+       "R_global": 0.82407,
+       "R_worst_group": 0.66667,
+       "toxic_recall": 0.76389,
+       "invalid_rate": 0.01852,
+       "pred_pos_rate": 0.43868
+      },
+      {
+       "rows": 432,
+       "selected_on": 0.74951,
+       "rejected": null,
+       "R_soft_min_gba": 0.74951,
+       "R_worst_gba": 0.74951,
+       "R_gba_mean": 0.82407,
+       "R_global": 0.82407,
+       "R_worst_group": 0.66667,
+       "toxic_recall": 0.76389,
+       "invalid_rate": 0.01852,
+       "pred_pos_rate": 0.43868
+      },
+      {
+       "rows": 900,
+       "selected_on": 0.71195,
+       "rejected": null,
+       "R_soft_min_gba": 0.71195,
+       "R_worst_gba": 0.71195,
+       "R_gba_mean": 0.79054,
+       "R_global": 0.79778,
+       "R_worst_group": 0.7,
+       "toxic_recall": 0.74,
+       "invalid_rate": 0.01111,
+       "pred_pos_rate": 0.44607
+      }
+     ]
+    },
+    {
+     "name": "arc:33ccf94e7d",
+     "hash": "938a2d8787b3",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.73343,
+       "rejected": null,
+       "R_soft_min_gba": 0.73343,
+       "R_worst_gba": 0.73343,
+       "R_gba_mean": 0.83102,
+       "R_global": 0.83102,
+       "R_worst_group": 0.625,
+       "toxic_recall": 0.76852,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.4375
+      },
+      {
+       "rows": 432,
+       "selected_on": 0.73465,
+       "rejected": null,
+       "R_soft_min_gba": 0.73465,
+       "R_worst_gba": 0.73465,
+       "R_gba_mean": 0.83333,
+       "R_global": 0.83333,
+       "R_worst_group": 0.625,
+       "toxic_recall": 0.76852,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.43519
+      }
+     ]
+    },
+    {
+     "name": "arc:011b29c6f2",
+     "hash": "7fe4d6b85f77",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.47222,
+       "R_gba_mean": 0.77778,
+       "R_global": 0.77778,
+       "R_worst_group": 0.47222,
+       "toxic_recall": 0.73611,
+       "invalid_rate": 0.07407,
+       "pred_pos_rate": 0.46
+      }
+     ]
+    },
+    {
+     "name": "arc:81bef952fa",
+     "hash": "692e1536434e",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.45833,
+       "R_gba_mean": 0.5162,
+       "R_global": 0.5162,
+       "R_worst_group": 0.45833,
+       "toxic_recall": 0.05093,
+       "invalid_rate": 0.03009,
+       "pred_pos_rate": 0.02625
+      }
+     ]
+    },
+    {
+     "name": "arc:8bbd868a0e",
+     "hash": "7b08ac3a6b57",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.4961,
+       "rejected": null,
+       "R_soft_min_gba": 0.4961,
+       "R_worst_gba": 0.4961,
+       "R_gba_mean": 0.53009,
+       "R_global": 0.53009,
+       "R_worst_group": 0.45833,
+       "toxic_recall": 0.07407,
+       "invalid_rate": 0.00926,
+       "pred_pos_rate": 0.03738
+      }
+     ]
+    },
+    {
+     "name": "arc:00f54d40d2",
+     "hash": "0669d031baa3",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.76876,
+       "rejected": null,
+       "R_soft_min_gba": 0.76876,
+       "R_worst_gba": 0.76876,
+       "R_gba_mean": 0.83565,
+       "R_global": 0.83565,
+       "R_worst_group": 0.69444,
+       "toxic_recall": 0.81019,
+       "invalid_rate": 0.00463,
+       "pred_pos_rate": 0.47442
+      },
+      {
+       "rows": 900,
+       "selected_on": 0.75776,
+       "rejected": null,
+       "R_soft_min_gba": 0.75776,
+       "R_worst_gba": 0.75776,
+       "R_gba_mean": 0.81625,
+       "R_global": 0.82333,
+       "R_worst_group": 0.75,
+       "toxic_recall": 0.79556,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.47222
+      }
+     ]
+    },
+    {
+     "name": "arc:b54a3ef732",
+     "hash": "35cdf367feb0",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.55214,
+       "rejected": null,
+       "R_soft_min_gba": 0.55214,
+       "R_worst_gba": 0.55214,
+       "R_gba_mean": 0.57407,
+       "R_global": 0.57407,
+       "R_worst_group": 0.52778,
+       "toxic_recall": 0.97222,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.89815
+      }
+     ]
+    },
+    {
+     "name": "arc:0e7a08b459",
+     "hash": "822316d247de",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.0,
+       "R_global": 0.0,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.0,
+       "invalid_rate": 1.0,
+       "pred_pos_rate": 0.0
+      }
+     ]
+    },
+    {
+     "name": "arc:a5f28ec6b2",
+     "hash": "a5618d498e27",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": -1000000000.0,
+       "rejected": "degenerate",
+       "R_worst_gba": 0.5,
+       "R_gba_mean": 0.5162,
+       "R_global": 0.5162,
+       "R_worst_group": 0.5,
+       "toxic_recall": 0.03241,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.0162
+      }
+     ]
+    },
+    {
+     "name": "arc:922c5e2c18",
+     "hash": "8570c8a7edbd",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.73757,
+       "rejected": null,
+       "R_soft_min_gba": 0.73757,
+       "R_worst_gba": 0.73757,
+       "R_gba_mean": 0.82639,
+       "R_global": 0.82639,
+       "R_worst_group": 0.63889,
+       "toxic_recall": 0.81944,
+       "invalid_rate": 0.00231,
+       "pred_pos_rate": 0.49188
+      }
+     ]
+    },
+    {
+     "name": "arc:0790d0534c",
+     "hash": "67b1b4c70dd2",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.6596,
+       "rejected": null,
+       "R_soft_min_gba": 0.6596,
+       "R_worst_gba": 0.6596,
+       "R_gba_mean": 0.74074,
+       "R_global": 0.74074,
+       "R_worst_group": 0.56944,
+       "toxic_recall": 0.84259,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.60185
+      }
+     ]
+    },
+    {
+     "name": "arc:1b8d440429",
+     "hash": "1ae50e26f4c6",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.34722,
+       "R_gba_mean": 0.45833,
+       "R_global": 0.45833,
+       "R_worst_group": 0.34722,
+       "toxic_recall": 0.03241,
+       "invalid_rate": 0.09491,
+       "pred_pos_rate": 0.02558
+      }
+     ]
+    },
+    {
+     "name": "arc:4caf23a01a",
+     "hash": "60f82d27f566",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.78679,
+       "rejected": null,
+       "R_soft_min_gba": 0.78679,
+       "R_worst_gba": 0.78679,
+       "R_gba_mean": 0.84491,
+       "R_global": 0.84491,
+       "R_worst_group": 0.72222,
+       "toxic_recall": 0.83333,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.48843
+      },
+      {
+       "rows": 900,
+       "selected_on": 0.75528,
+       "rejected": null,
+       "R_soft_min_gba": 0.75528,
+       "R_worst_gba": 0.75528,
+       "R_gba_mean": 0.8193,
+       "R_global": 0.82667,
+       "R_worst_group": 0.74375,
+       "toxic_recall": 0.80444,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.47778
+      }
+     ]
+    },
+    {
+     "name": "arc:20041c1d02",
+     "hash": "8fd3c78536a7",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.50853,
+       "rejected": null,
+       "R_soft_min_gba": 0.50853,
+       "R_worst_gba": 0.50853,
+       "R_gba_mean": 0.5162,
+       "R_global": 0.5162,
+       "R_worst_group": 0.5,
+       "toxic_recall": 0.0463,
+       "invalid_rate": 0.00694,
+       "pred_pos_rate": 0.02797
+      }
+     ]
+    },
+    {
+     "name": "arc:01b4fb8ca5",
+     "hash": "b9e2c9049c79",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.25,
+       "R_gba_mean": 0.49769,
+       "R_global": 0.49769,
+       "R_worst_group": 0.25,
+       "toxic_recall": 0.63426,
+       "invalid_rate": 0.3912,
+       "pred_pos_rate": 0.63498
+      }
+     ]
+    },
+    {
+     "name": "arc:74baa15c30",
+     "hash": "fbbbf9edd9a5",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.56725,
+       "rejected": null,
+       "R_soft_min_gba": 0.56725,
+       "R_worst_gba": 0.56725,
+       "R_gba_mean": 0.59028,
+       "R_global": 0.59028,
+       "R_worst_group": 0.54167,
+       "toxic_recall": 0.9537,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.86343
+      }
+     ]
+    },
+    {
+     "name": "arc:7237b22e87",
+     "hash": "05513d5303f7",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.52071,
+       "rejected": null,
+       "R_soft_min_gba": 0.52071,
+       "R_worst_gba": 0.52071,
+       "R_gba_mean": 0.53935,
+       "R_global": 0.53935,
+       "R_worst_group": 0.5,
+       "toxic_recall": 0.99537,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.95602
+      }
+     ]
+    },
+    {
+     "name": "arc:f35a41b867",
+     "hash": "67928d7539c9",
+     "evals": [
+      {
+       "rows": 432,
+       "selected_on": 0.51706,
+       "rejected": null,
+       "R_soft_min_gba": 0.51706,
+       "R_worst_gba": 0.51706,
+       "R_gba_mean": 0.53241,
+       "R_global": 0.53241,
+       "R_worst_group": 0.5,
+       "toxic_recall": 0.06481,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.03241
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "run": "44_evoprompt_de__hard_min",
+   "method": "evoprompt_de",
+   "seed": 44,
+   "final": "s15:44_evoprompt_de__hard_min",
+   "candidates": [
+    {
+     "name": "seed",
+     "hash": "99066a101f5a",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": 0.7809,
+       "rejected": null,
+       "R_soft_min_gba": 0.7809,
+       "R_worst_gba": 0.7809,
+       "R_gba_mean": 0.82394,
+       "R_global": 0.828,
+       "R_worst_group": 0.74713,
+       "toxic_recall": 0.79365,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.468
+      }
+     ]
+    },
+    {
+     "name": "arc:f4d6853143",
+     "hash": "81842a51791d",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "degenerate",
+       "R_worst_gba": 0.5,
+       "R_gba_mean": 0.5,
+       "R_global": 0.504,
+       "R_worst_group": 0.44048,
+       "toxic_recall": 1.0,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 1.0
+      }
+     ]
+    },
+    {
+     "name": "arc:ed233de0e2",
+     "hash": "67a1577969db",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.0,
+       "R_global": 0.0,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.0,
+       "invalid_rate": 1.0,
+       "pred_pos_rate": 0.0
+      }
+     ]
+    },
+    {
+     "name": "arc:91a47bec03",
+     "hash": "ac685213e64d",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.00942,
+       "R_global": 0.01,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.01587,
+       "invalid_rate": 0.988,
+       "pred_pos_rate": 0.83333
+      }
+     ]
+    },
+    {
+     "name": "arc:758d9b0e17",
+     "hash": "4908ab988402",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.09708,
+       "R_global": 0.1,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.07937,
+       "invalid_rate": 0.892,
+       "pred_pos_rate": 0.38889
+      }
+     ]
+    },
+    {
+     "name": "arc:5c56cd8fe7",
+     "hash": "7c72bb318d88",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.43497,
+       "R_gba_mean": 0.57416,
+       "R_global": 0.568,
+       "R_worst_group": 0.43529,
+       "toxic_recall": 0.58333,
+       "invalid_rate": 0.316,
+       "pred_pos_rate": 0.51462
+      }
+     ]
+    },
+    {
+     "name": "arc:67878b3bde",
+     "hash": "e6c7cc6b08d1",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.0,
+       "R_global": 0.0,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.0,
+       "invalid_rate": 1.0,
+       "pred_pos_rate": 0.0
+      }
+     ]
+    },
+    {
+     "name": "arc:32814d6d6d",
+     "hash": "7890e01d2c50",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": 0.731,
+       "rejected": null,
+       "R_soft_min_gba": 0.731,
+       "R_worst_gba": 0.731,
+       "R_gba_mean": 0.79998,
+       "R_global": 0.808,
+       "R_worst_group": 0.67816,
+       "toxic_recall": 0.69444,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.388
+      }
+     ]
+    },
+    {
+     "name": "s15:44_evoprompt_de__hard_min",
+     "hash": "13679a7b9ef3",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.70833,
+       "R_gba_mean": 0.80754,
+       "R_global": 0.808,
+       "R_worst_group": 0.70833,
+       "toxic_recall": 0.86111,
+       "invalid_rate": 0.022,
+       "pred_pos_rate": 0.56237
+      },
+      {
+       "rows": 900,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.72887,
+       "R_gba_mean": 0.78988,
+       "R_global": 0.79444,
+       "R_worst_group": 0.74522,
+       "toxic_recall": 0.86889,
+       "invalid_rate": 0.02111,
+       "pred_pos_rate": 0.57889
+      }
+     ]
+    },
+    {
+     "name": "arc:30b98b48b2",
+     "hash": "b7aa0cd9c49c",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": 0.7391,
+       "rejected": null,
+       "R_soft_min_gba": 0.7391,
+       "R_worst_gba": 0.7391,
+       "R_gba_mean": 0.80252,
+       "R_global": 0.808,
+       "R_worst_group": 0.68056,
+       "toxic_recall": 0.74603,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.44
+      }
+     ]
+    },
+    {
+     "name": "arc:d374166987",
+     "hash": "e907a293d14e",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": 0.80248,
+       "rejected": null,
+       "R_soft_min_gba": 0.80248,
+       "R_worst_gba": 0.80248,
+       "R_gba_mean": 0.84912,
+       "R_global": 0.85,
+       "R_worst_group": 0.75,
+       "toxic_recall": 0.88492,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.538
+      }
+     ]
+    },
+    {
+     "name": "arc:62b055fa80",
+     "hash": "cab072443f69",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.0,
+       "R_global": 0.0,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.0,
+       "invalid_rate": 1.0,
+       "pred_pos_rate": 0.0
+      }
+     ]
+    },
+    {
+     "name": "arc:3cb8d40927",
+     "hash": "a439bb0abf9d",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.0,
+       "R_global": 0.0,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.0,
+       "invalid_rate": 0.998,
+       "pred_pos_rate": 0.0
+      }
+     ]
+    },
+    {
+     "name": "arc:eda23e80fd",
+     "hash": "6ff07be81ae2",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.06944,
+       "R_gba_mean": 0.17295,
+       "R_global": 0.178,
+       "R_worst_group": 0.06944,
+       "toxic_recall": 0.19048,
+       "invalid_rate": 0.784,
+       "pred_pos_rate": 0.46296
+      }
+     ]
+    },
+    {
+     "name": "arc:b830c71570",
+     "hash": "e8178e12d0cf",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": 0.76989,
+       "rejected": null,
+       "R_soft_min_gba": 0.76989,
+       "R_worst_gba": 0.76989,
+       "R_gba_mean": 0.81428,
+       "R_global": 0.818,
+       "R_worst_group": 0.73563,
+       "toxic_recall": 0.78571,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.47
+      }
+     ]
+    },
+    {
+     "name": "arc:cc246f76c7",
+     "hash": "7f096223e88a",
+     "evals": [
+      {
+       "rows": 500,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.0,
+       "R_gba_mean": 0.0391,
+       "R_global": 0.04,
+       "R_worst_group": 0.0,
+       "toxic_recall": 0.03175,
+       "invalid_rate": 0.932,
+       "pred_pos_rate": 0.23529
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "run": "44_gepa__hard_min",
+   "method": "gepa",
+   "seed": 44,
+   "final": "seed",
+   "candidates": [
+    {
+     "name": "seed",
+     "hash": "99066a101f5a",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": 0.78117,
+       "rejected": null,
+       "R_soft_min_gba": 0.78117,
+       "R_worst_gba": 0.78117,
+       "R_gba_mean": 0.81908,
+       "R_global": 0.8275,
+       "R_worst_group": 0.72727,
+       "toxic_recall": 0.78537,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.465
+      },
+      {
+       "rows": 900,
+       "selected_on": 0.77827,
+       "rejected": null,
+       "R_soft_min_gba": 0.77827,
+       "R_worst_gba": 0.77827,
+       "R_gba_mean": 0.82209,
+       "R_global": 0.82778,
+       "R_worst_group": 0.75969,
+       "toxic_recall": 0.80222,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.47444
+      }
+     ]
+    },
+    {
+     "name": "arc:517e9183d8",
+     "hash": "96e73944179d",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.11418,
+       "R_gba_mean": 0.43852,
+       "R_global": 0.46,
+       "R_worst_group": 0.11594,
+       "toxic_recall": 0.42927,
+       "invalid_rate": 0.445,
+       "pred_pos_rate": 0.40991
+      }
+     ]
+    },
+    {
+     "name": "arc:71eb0f616d",
+     "hash": "bb8d00c44596",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": 0.77202,
+       "rejected": null,
+       "R_soft_min_gba": 0.77202,
+       "R_worst_gba": 0.77202,
+       "R_gba_mean": 0.81514,
+       "R_global": 0.82,
+       "R_worst_group": 0.72464,
+       "toxic_recall": 0.78049,
+       "invalid_rate": 0.0125,
+       "pred_pos_rate": 0.46835
+      }
+     ]
+    },
+    {
+     "name": "arc:bbf73ec6eb",
+     "hash": "52dcda4bbf38",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": 0.66553,
+       "rejected": null,
+       "R_soft_min_gba": 0.66553,
+       "R_worst_gba": 0.66553,
+       "R_gba_mean": 0.75184,
+       "R_global": 0.7625,
+       "R_worst_group": 0.57971,
+       "toxic_recall": 0.56098,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.3
+      },
+      {
+       "rows": 400,
+       "selected_on": 0.66691,
+       "rejected": null,
+       "R_soft_min_gba": 0.66691,
+       "R_worst_gba": 0.66691,
+       "R_gba_mean": 0.75382,
+       "R_global": 0.765,
+       "R_worst_group": 0.57971,
+       "toxic_recall": 0.56585,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.3025
+      }
+     ]
+    },
+    {
+     "name": "arc:adfc3c81d4",
+     "hash": "5f681e08f51d",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.40959,
+       "R_gba_mean": 0.75204,
+       "R_global": 0.755,
+       "R_worst_group": 0.43478,
+       "toxic_recall": 0.6878,
+       "invalid_rate": 0.0925,
+       "pred_pos_rate": 0.44353
+      }
+     ]
+    },
+    {
+     "name": "arc:2a41aa98d6",
+     "hash": "df14d84e6ae5",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": 0.76223,
+       "rejected": null,
+       "R_soft_min_gba": 0.76223,
+       "R_worst_gba": 0.76223,
+       "R_gba_mean": 0.81072,
+       "R_global": 0.815,
+       "R_worst_group": 0.67273,
+       "toxic_recall": 0.74146,
+       "invalid_rate": 0.0,
+       "pred_pos_rate": 0.4325
+      }
+     ]
+    },
+    {
+     "name": "arc:82c740f474",
+     "hash": "1f1bd49c0a0d",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": -1000000000.0,
+       "rejected": "invalid_rate",
+       "R_worst_gba": 0.27,
+       "R_gba_mean": 0.55078,
+       "R_global": 0.5825,
+       "R_worst_group": 0.25455,
+       "toxic_recall": 0.43902,
+       "invalid_rate": 0.2225,
+       "pred_pos_rate": 0.2926
+      }
+     ]
+    },
+    {
+     "name": "arc:7c73c8bcf4",
+     "hash": "0276d3f8275e",
+     "evals": [
+      {
+       "rows": 400,
+       "selected_on": 0.64744,
+       "rejected": null,
+       "R_soft_min_gba": 0.64744,
+       "R_worst_gba": 0.64744,
+       "R_gba_mean": 0.74117,
+       "R_global": 0.755,
+       "R_worst_group": 0.55072,
+       "toxic_recall": 0.5561,
+       "invalid_rate": 0.0025,
+       "pred_pos_rate": 0.30326
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

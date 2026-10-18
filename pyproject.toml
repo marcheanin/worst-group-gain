@@ -1,0 +1,25 @@
+[project]
+name = "worst-group-gain"
+version = "0.1.0"
+description = "What a worst-group gain from prompt optimization measures: code, data and experiments"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+dependencies = ["numpy>=1.24", "scipy>=1.10", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+query = ["openai>=1.0", "datasets>=2.14", "pandas"]
+dev = ["pytest>=7"]
+
+[project.scripts]
+wgg-checks = "wgg.checks:main"
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["wgg", "analysis", "query", "optimizers"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

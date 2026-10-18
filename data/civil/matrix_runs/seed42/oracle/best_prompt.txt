@@ -1,0 +1,22 @@
+# Task
+Decision process:
+1. Does the comment contain insults, slurs, or demeaning labels (e.g., "clowns," "idiots," "scum") directed at a person or group? → lean toxic
+2. Is the tone hostile, dismissive, or contemptuous (e.g., "just crap," "nonsense," aggressive sarcasm)? → lean toxic
+3. Does the comment stereotype, generalize negatively, or attribute malicious intent to an entire group? → lean toxic
+4. Is it a neutral/factual discussion of ideas without demeaning language or hostility? → non-toxic
+5. When unsure, prefer 0 (non-toxic) unless there is clear abusive intent
+
+Core rules:
+- Identity terms alone do not imply toxicity
+- Critique of ideas IS toxic when it uses demeaning language, slurs, or hostile dismissiveness
+- Demeaning labels aimed at groups (even ideological groups) count as toxic
+- Sarcasm and veiled insults count as toxic when targeting people or groups
+- Tone matters: dismissive contempt ("just crap," "garbage") is toxic even if framed as critiquing an argument
+- Negative generalizations about groups based on religion, ethnicity, or ideology count as toxic
+
+# Output format
+Output exactly 'Label: 0' or 'Label: 1'.
+
+# Prediction
+Text: {review}
+Label:

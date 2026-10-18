@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+runs/
+# texts of the public datasets, rebuilt by `python -m query.fetch_texts`
+data/*/texts/
+*.egg-info/

@@ -1,0 +1,50 @@
+{
+  "best_prompt": "<System>\n    <Role>You are a toxicity classifier for online comments.</Role>\n\n    <BaseGuidelines>\n        - Output a single binary label only: 0 (non-toxic) or 1 (toxic)\n        - Format: \"Label: 0\" or \"Label: 1\" (or just \"0\" / \"1\")\n        - Toxic = insulting, threatening, identity attack, obscene, or hate speech\n        - Non-toxic = civil disagreement, factual statements, or benign mention of identity terms\n        - Mentioning an identity group (race, religion, gender, LGBTQ, etc.) is NOT itself toxic\n    </BaseGuidelines>\n\n    <DynamicRules>\nWe are given a few labeled examples, then two unlabeled examples. We need to infer the instruction and output format. The outputs are binary (0 or 1). Looking at the inputs, they appear to be text snippets, likely from online comments or posts. The labels seem to indicate something about the content. Let's analyze: - Input: \"... and this man, a partisan hack and despicable moron, to parry the title of this article, is close to being an imbec\n        Output exactly Label: 0 (non-toxic) or Label: 1 (toxic).\n    </DynamicRules>\n</System>\n\n<FewShotExamples>\nExample 1:\nComment: People of every background deserve equal protection under the law.\nLabel: 0\n\nExample 2:\nComment: Those people are animals and should be wiped out.\nLabel: 1\n\nExample 3:\nComment: I disagree with the policy, but the authors raised fair points.\nLabel: 0\n</FewShotExamples>\n\n<Task>\n    Comment: {review}\n</Task>\n",
+  "n_candidates": 7,
+  "trace": {
+    "method": "ape_ut",
+    "k": 6,
+    "n_shots": 36,
+    "n_unlabeled": 12,
+    "scored": [
+      {
+        "softmin": 0.6820344853894968,
+        "worst_gba": 0.6465432098765432,
+        "prompt_len": 1507
+      },
+      {
+        "softmin": 0.6829750769364091,
+        "worst_gba": 0.6419753086419753,
+        "prompt_len": 1464
+      },
+      {
+        "softmin": 0.6850160987552889,
+        "worst_gba": 0.631358024691358,
+        "prompt_len": 1492
+      },
+      {
+        "softmin": 0.6466270505025195,
+        "worst_gba": 0.607037037037037,
+        "prompt_len": 1213
+      },
+      {
+        "softmin": 0.6865171613585515,
+        "worst_gba": 0.654074074074074,
+        "prompt_len": 1441
+      },
+      {
+        "softmin": 0.6813548866055436,
+        "worst_gba": 0.635432098765432,
+        "prompt_len": 1449
+      },
+      {
+        "softmin": 0.6851304462044924,
+        "worst_gba": 0.6267901234567901,
+        "prompt_len": 1488
+      }
+    ],
+    "best_softmin": 0.6865171613585515
+  },
+  "scorer_calls": 18000,
+  "optimizer_calls": 12
+}

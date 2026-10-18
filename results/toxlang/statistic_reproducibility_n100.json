@@ -1,0 +1,100 @@
+{
+  "dataset": "toxlang",
+  "prompts": [
+    "s15:42_ape__hard_min",
+    "s15:42_apo__hard_min",
+    "s15:42_evoprompt_de__hard_min",
+    "s15:42_gepa__hard_min",
+    "s15:43_ape__hard_min",
+    "s15:43_apo__hard_min",
+    "s15:43_gepa__hard_min",
+    "s15:44_apo__hard_min",
+    "s15:44_evoprompt_de__hard_min",
+    "seed"
+  ],
+  "n_prompts": 10,
+  "n_pairs": 45,
+  "n_splits": 100,
+  "rows_per_cell_per_half": 125,
+  "n_boot": 300,
+  "seed": 0,
+  "statistics": {
+    "hard_min": {
+      "declared": 481,
+      "declared_share_pct": 10.688888888888888,
+      "reproduced": 416,
+      "reproduced_share_pct": 86.48648648648648,
+      "sign_reversals": 0
+    },
+    "cvar25": {
+      "declared": 481,
+      "declared_share_pct": 10.688888888888888,
+      "reproduced": 416,
+      "reproduced_share_pct": 86.48648648648648,
+      "sign_reversals": 0
+    },
+    "softmin_w0": {
+      "declared": 1303,
+      "declared_share_pct": 28.955555555555556,
+      "reproduced": 1194,
+      "reproduced_share_pct": 91.6346891788181,
+      "sign_reversals": 2
+    },
+    "softmin_w10": {
+      "declared": 1340,
+      "declared_share_pct": 29.77777777777778,
+      "reproduced": 1235,
+      "reproduced_share_pct": 92.16417910447761,
+      "sign_reversals": 2
+    },
+    "softmin_w20": {
+      "declared": 1376,
+      "declared_share_pct": 30.57777777777778,
+      "reproduced": 1270,
+      "reproduced_share_pct": 92.29651162790698,
+      "sign_reversals": 2
+    },
+    "softmin_w40": {
+      "declared": 1444,
+      "declared_share_pct": 32.08888888888889,
+      "reproduced": 1335,
+      "reproduced_share_pct": 92.45152354570637,
+      "sign_reversals": 3
+    },
+    "softmin_w80": {
+      "declared": 1541,
+      "declared_share_pct": 34.24444444444445,
+      "reproduced": 1434,
+      "reproduced_share_pct": 93.05645684620376,
+      "sign_reversals": 4
+    },
+    "softmin_w160": {
+      "declared": 1672,
+      "declared_share_pct": 37.15555555555556,
+      "reproduced": 1564,
+      "reproduced_share_pct": 93.54066985645933,
+      "sign_reversals": 3
+    },
+    "softmin_w320": {
+      "declared": 1753,
+      "declared_share_pct": 38.955555555555556,
+      "reproduced": 1648,
+      "reproduced_share_pct": 94.01026811180833,
+      "sign_reversals": 3
+    },
+    "mean_gba": {
+      "declared": 1892,
+      "declared_share_pct": 42.044444444444444,
+      "reproduced": 1794,
+      "reproduced_share_pct": 94.82029598308668,
+      "sign_reversals": 4
+    },
+    "worst_class": {
+      "declared": 2156,
+      "declared_share_pct": 47.91111111111111,
+      "reproduced": 2062,
+      "reproduced_share_pct": 95.64007421150278,
+      "sign_reversals": 3
+    }
+  }
+}

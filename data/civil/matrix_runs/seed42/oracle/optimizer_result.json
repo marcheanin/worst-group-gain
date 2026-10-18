@@ -1,0 +1,73 @@
+{
+  "best_prompt": "# Task\nDecision process:\n1. Does the comment contain insults, slurs, or demeaning labels (e.g., \"clowns,\" \"idiots,\" \"scum\") directed at a person or group? \u2192 lean toxic\n2. Is the tone hostile, dismissive, or contemptuous (e.g., \"just crap,\" \"nonsense,\" aggressive sarcasm)? \u2192 lean toxic\n3. Does the comment stereotype, generalize negatively, or attribute malicious intent to an entire group? \u2192 lean toxic\n4. Is it a neutral/factual discussion of ideas without demeaning language or hostility? \u2192 non-toxic\n5. When unsure, prefer 0 (non-toxic) unless there is clear abusive intent\n\nCore rules:\n- Identity terms alone do not imply toxicity\n- Critique of ideas IS toxic when it uses demeaning language, slurs, or hostile dismissiveness\n- Demeaning labels aimed at groups (even ideological groups) count as toxic\n- Sarcasm and veiled insults count as toxic when targeting people or groups\n- Tone matters: dismissive contempt (\"just crap,\" \"garbage\") is toxic even if framed as critiquing an argument\n- Negative generalizations about groups based on religion, ethnicity, or ideology count as toxic\n\n# Output format\nOutput exactly 'Label: 0' or 'Label: 1'.\n\n# Prediction\nText: {review}\nLabel:\n",
+  "n_candidates": 4,
+  "trace": {
+    "method": "oracle",
+    "rounds": 2,
+    "beam_size": 4,
+    "opt": {
+      "minibatch_size": 64,
+      "n_gradients": 4,
+      "errors_per_gradient": 4,
+      "gradients_per_error": 1,
+      "steps_per_gradient": 1,
+      "mc_samples_per_step": 2,
+      "max_expansion_factor": 8,
+      "reject_on_errors": false
+    },
+    "history": [
+      {
+        "round": 0,
+        "beam_train_softmin": [
+          0.6759325508750416
+        ],
+        "beam_lens": [
+          651
+        ]
+      },
+      {
+        "round": 1,
+        "beam_train_softmin": [
+          0.694455946646992,
+          0.6916940166117391,
+          0.6760030424480992,
+          0.6553067765878142
+        ],
+        "beam_lens": [
+          1185,
+          1522,
+          651,
+          829
+        ]
+      },
+      {
+        "round": 2,
+        "beam_train_softmin": [
+          0.6976289637997367,
+          0.6947101038668384,
+          0.6940052745256212,
+          0.6867874205332353
+        ],
+        "beam_lens": [
+          1185,
+          1443,
+          1522,
+          1518
+        ]
+      }
+    ],
+    "dev_softmin_beam": [
+      0.6892107296234526,
+      0.6810913638820634,
+      0.6861056230650919,
+      0.6754849374789448
+    ],
+    "best_softmin": 0.6892107296234526,
+    "upstream": "baselines/_upstream/LMOps/prompt_optimization",
+    "target_labeled_n": 400,
+    "mixed_n": 760,
+    "base": "apo_protegi"
+  },
+  "scorer_calls": 67940,
+  "optimizer_calls": 224
+}

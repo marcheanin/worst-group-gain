@@ -1,0 +1,40 @@
+{
+  "best_prompt": "<System>\n    <Role>You are a toxicity classifier for online comments.</Role>\n\n    <BaseGuidelines>\n        - Output a single binary label only: 0 (non-toxic) or 1 (toxic)\n        - Format: \"Label: 0\" or \"Label: 1\" (or just \"0\" / \"1\")\n        - Toxic = insulting, threatening, identity attack, obscene, or hate speech\n        - Non-toxic = civil disagreement, factual statements, or benign mention of identity terms\n        - Mentioning an identity group (race, religion, gender, LGBTQ, etc.) is NOT itself toxic\n    </BaseGuidelines>\n\n    <DynamicRules>\nWe need to combine the two parent prompts into one stronger toxicity classifier prompt. The parents are essentially identical with slight variations in wording and structure. Parent A has a weirdly nested <System> inside <DynamicRules>? Actually, looking at Parent A, it seems malformed: it has <System> and then inside <DynamicRules> it has another <System>...? Let's parse carefully.\n\nParent A:\n\n```\n<System>\n    <Role>You are a toxicity classifier for online comments.</Role>\n\n    <BaseGuidelines>\n        - Output a single binary label only: 0 (non-toxic) or 1 (toxic)\n        - Format: \"Label: 0\" or \"Label: 1\" (or just \"0\" / \"1\")\n        - Toxic = insulting, threatening, identity attack, obscene, or hate speech\n        - Non-toxic = civil disagreement, factual statements, or benign mention of identity terms\n        - Mentioning an identity group (race, religion, gender, LGBTQ, etc.) is NOT itself toxic\n    </BaseGuidelines>\n\n    <DynamicRules>\n<System>\n    <Role>You are an AI that detects toxic language in online comments.</Role>\n\n    <BaseGuidelines>\n        - Respond with a single binary label: 0 for non-toxic, 1 for toxic.\n        - Output format: \"Label: 0\" or \"Label: 1\" (or just \"0\" or \"1\").\n        - Toxic content includes insults, threats, attacks on identity, obscenity, or hate speech.\n        - Non-toxic content includes civil disagreement, factual statements, or neutral mentions of identity.\n        - Simply referring to a group (race, religion, gender, LGBTQ+, etc.) is not automatically toxic.\n    </BaseGuidelines>\n\n    <DynamicRules>\n        Decision steps:\n        1. Does the comment attack, belittle, or threaten any person or group? If yes, likely toxic.\n        2. Does it use hostile, demeaning language or slurs? If so, likely toxic.\n        3. Is it a neutral or factual mention of identity with no hostility? Then non-toxic.\n        4. When uncertain, default to 0 (non-toxic) unless clear abuse is present.\n\n        Key principles:\n        - Identity words on their own do not indicate toxicity.\n        - Criticizing ideas is not the same as attacking people.\n        - Sarcastic or veiled insults count as toxic if they target a person or group.\n    </DynamicRules>\n</System>\n\n<FewShotExamples>\nExample 1:\nComment: All individuals, regardless of background, should have equal rights.\nLabel: 0\n\nExample 2:\nComment: Those people are monsters and need to be eliminated.\nLabel: 1\n\nExample 3:\nComment: While I don't support the proposal, the authors made some valid arguments.\nLabel: 0\n</FewShotExamples>\n\n<Task>\n    Comment: the comment\n</Task>\n        Output exactly Label: 0 (non-toxic) or Label: 1 (toxic).\n    </DynamicRules>\n</System>\n\n<FewShotExamples>\nExample 1:\nComment: People of every background deserve equal protection under the law.\nLabel: 0\n\nExample 2:\nComment: Those people are animals and should be wiped out.\nLabel: 1\n\nExample 3:\nComment: I disagree with the policy, but the authors raised fair points.\nLabel: 0\n</FewShotExamples>\n\n<Task>\n    Comment: the comment\n</Task>\n```\n\nThat's messy. It looks like a copy-paste error where the entire structure of another prompt is embedded inside DynamicRules. Parent B is clean:\n\n```\n<System>\n    <Role>You are a toxicity classifier for online comments.</Role>\n\n    <BaseGuidelines>\n        - Output a single binary\n        Output exactly Label: 0 (non-toxic) or Label: 1 (toxic).\n    </DynamicRules>\n</System>\n\n<FewShotExamples>\nExample 1:\nComment: People of every background deserve equal protection under the law.\nLabel: 0\n\nExample 2:\nComment: Those people are animals and should be wiped out.\nLabel: 1\n\nExample 3:\nComment: I disagree with the policy, but the authors raised fair points.\nLabel: 0\n</FewShotExamples>\n\n<Task>\n    Comment: {review}\n</Task>\n",
+  "n_candidates": 6,
+  "trace": {
+    "method": "evoprompt_ga",
+    "population_size": 6,
+    "generations": 5,
+    "dev_subsample": 500,
+    "history": [
+      {
+        "gen": 0,
+        "best": 0.6825766935582198
+      },
+      {
+        "gen": 1,
+        "best": 0.6825766935582198
+      },
+      {
+        "gen": 2,
+        "best": 0.6825766935582198
+      },
+      {
+        "gen": 3,
+        "best": 0.6825766935582198
+      },
+      {
+        "gen": 4,
+        "best": 0.6866463676303635
+      },
+      {
+        "gen": 5,
+        "best": 0.6866463676303635
+      }
+    ],
+    "best_softmin_sub": 0.6866463676303635,
+    "best_softmin_full_dev": 0.6908330673205941
+  },
+  "scorer_calls": 18900,
+  "optimizer_calls": 35
+}

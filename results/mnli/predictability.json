@@ -1,0 +1,56 @@
+{
+ "leverage_main_rows": {
+  "rows": 4991,
+  "worst_class_response": 0.022477056305139995,
+  "hard_min_response_real": 0.009809419496166457,
+  "hard_min_response_pseudo_median": 0.006172690763052254,
+  "leverage_real": 2.291374766256462,
+  "leverage_pseudo": 3.641370865308925
+ },
+ "leverage_before_search": {
+  "rows": 4991,
+  "worst_class_response": 0.022477056305139995,
+  "hard_min_response_real": 0.009809419496166457,
+  "hard_min_response_pseudo_median": 0.006172690763052254,
+  "leverage_real": 2.291374766256462,
+  "leverage_pseudo": 3.641370865308925
+ },
+ "edits_vs_finals": {
+  "edits": {
+   "n": 11,
+   "disagree_with_seed": 0.02633831806342325,
+   "half_width": 0.016294350127783883
+  },
+  "finals": {
+   "n": 22,
+   "disagree_with_seed": 0.04181162456057266,
+   "half_width": 0.02090170682730926
+  }
+ },
+ "gap": [
+  {
+   "grouping": "real10",
+   "k": 10,
+   "gap": 0.036176706827309224,
+   "holm": 2
+  },
+  {
+   "grouping": "matched2",
+   "k": 2,
+   "gap": 0.00031729606428687607,
+   "holm": 12
+  },
+  {
+   "grouping": "spoken2",
+   "k": 2,
+   "gap": 0.021005595655268272,
+   "holm": 9
+  },
+  {
+   "grouping": "reg5",
+   "k": 5,
+   "gap": 0.003246492985972016,
+   "holm": 2
+  }
+ ]
+}

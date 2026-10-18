@@ -1,0 +1,171 @@
+dataset:
+  name: civilcomments
+  data_root: ./data
+  category_id: null
+  train_category_id: null
+  eval_exclude_category_ids: null
+  min_user_reviews: 1
+  max_train_users: 150000
+  max_val_users: 50000
+  max_test_users: 80000
+  max_reviews_per_user: 10
+  al_candidate_pool_size: 4000
+  cluster_artifact: null
+  cache_dir: null
+  use_cache: true
+  label_space: binary
+clusters:
+  n_clusters: 9
+  embedding_model: all-MiniLM-L6-v2
+  seed: 44
+  pca_components: 32
+  allow_synthetic_fallback: false
+  geometry: oracle
+  min_users_per_cluster: 0
+  control: none
+  descriptors_enabled: true
+  descriptors_top_n: 5
+  descriptors_llm_editor: false
+ensemble:
+  api_base: https://openrouter.ai/api/v1
+  workers:
+  - name: google/gemma-3-12b-it
+    temperature: 0.0
+    max_tokens: 16
+    reasoning_effort: none
+  max_parallel: 16
+  timeout: 60
+  max_retries: 5
+  aggregation: majority
+  tie_break: lowest_rating
+  label_space: binary
+  mode: single
+  fail_closed: true
+data_roles:
+  enabled: true
+  fit_fraction: 0.7
+  stratify: true
+  d_select_size: 720
+  d_anchor_size: 100
+  d_audit_size: 80
+  d_dev_size: 900
+  n_min_per_group: 60
+  min_reviews_for_fit: 3
+  anchor_max_disagreement: 0.2
+  anchor_max_uncertainty: 0.0
+  anchor_gate_mode: reject
+  anchor_gate_delta: 0.02
+  anchor_gate_alpha: 0.05
+  dev_gate_mode: reject
+  dev_gate_delta: 0.01
+  d_dev_from_validation: true
+  d_dev_per_cell: 50
+  d_dev_include_none: true
+  build_test_fixed: true
+  test_fixed_per_cell: 100
+  test_fixed_include_none: true
+  fixed_sets_dir: experiments/E5_civilcomments/fixed_sets
+  eval_sets_artifact: null
+  d_select_rotate: false
+  d_select_stratify_label: true
+  balanced_cells: true
+  balanced_per_cell: 45
+  balanced_include_none: false
+fitness:
+  mode: soft_min_lex
+  epsilon_global: 0.01
+  beta_a: 1.0
+  beta_b: 1.0
+  w_cvar: 0.5
+  w_global: 0.3
+  w_kappa: 0.2
+  w_global_mix: 0.5
+  w_tail: 0.5
+  tail_quantile: 0.2
+  cvar_quantile: 0.33
+  soft_min_tau: 0.1
+  shrink_prior_weight: 40.0
+  class_balanced: true
+  group_acc: balanced_within
+  gba_min_pos: 10
+  gba_min_neg: 10
+  gba_exclude_none: true
+  fail_closed: true
+  max_invalid_rate: 0.02
+  min_pred_pos_rate: 0.02
+  prompt_len_limit: 3000
+  len_penalty_per_100: 0.025
+  len_penalty_start: 300
+acquisition:
+  policy: group_aware
+  batch_size: 24
+  hard_ratio: 0.7
+  oversample_factor: 3.0
+  n_diversity_clusters: 8
+  expansion_trigger: 12
+  expansion_batch: 12
+  expansion_policy: uncertainty
+  group_quota_enabled: true
+  uncertainty_k: 3
+  uncertainty_temperature: 0.7
+  pool_score_subsample: 400
+evolution:
+  n_evolve_iterations: 18
+  population_size: 16
+  archive_size: 500
+  mutator_model: deepseek/deepseek-v4-pro
+  mutator_temperature: 0.6
+  mutator_max_tokens: 4096
+  structured_prompt: true
+  synthetic_fewshot: false
+  inject_verbatim_fewshot: true
+  fewshot_inject_limit: 4
+  enforce_text_triggers: true
+  contrastive_pairs: true
+  contrastive_pair_limit: 4
+consolidation:
+  enabled: false
+  model: google/gemini-3.1-pro-preview
+  top_k_archive: 3
+  pool_carryover_k: 3
+  cluster_pareto: false
+  gate_delta: 0.01
+  every_n_cycles: 1
+  run_on_last_cycle: true
+  scope: base_guidelines
+pareto:
+  enabled: true
+  front_k: 4
+  champion_margin: 0.01
+  score_consolidated_on_select: true
+  seed_openevolve_from_front: true
+  gate_fallback_down_front: true
+active_learning:
+  n_cycles: 4
+  seed: 44
+  selection_mode: lexicographic
+  selection_w_cvar: 0.7
+  selection_w_global: 0.3
+  proxy_validation_min_cycles: 2
+  proxy_tail_metric: CVaR_cluster_shrunk
+  tail_quantile: 0.2
+  selection_use_shrunk_cvar: true
+  selection_split: d_dev
+experiment:
+  name: E5_civilcomments_prime_main_s44
+  results_dir: results
+  smoke: false
+  smoke_n_cycles: 1
+  smoke_n_evolve: 2
+  smoke_max_examples: 200
+  verbose: true
+  smoke_validate: true
+  force_mock: false
+  stable_final_repeats: 3
+budget:
+  total_calls: 60000
+  on_exhausted: stop
+  scorer_calls: 60000
+  optimizer_calls: 450
+prompt_path: prompts/initial_prompt_civilcomments.txt
+openevolve_config_path: configs/openevolve_e5_civilcomments.yaml

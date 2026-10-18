@@ -1,0 +1,18 @@
+# Task
+Decision process:
+        1. Does the comment attack, demean, or threaten a person or group? → lean toxic
+        2. Is the tone hostile, insulting, or using slurs? → lean toxic
+        3. Is it a neutral/factual mention of identity without hostility? → non-toxic
+        4. When unsure, prefer 0 (non-toxic) unless clear abusive intent
+
+        Core rules:
+        - Identity terms alone do not imply toxicity
+        - Critique of ideas ≠ attack on people
+        - Sarcasm and veiled insults still count as toxic when the target is a person/group
+
+# Output format
+Output exactly 'Label: 0' or 'Label: 1'.
+
+# Prediction
+Text: {review}
+Label:

@@ -1,0 +1,8 @@
+optimizers/protegi.py is a port of ProTeGi from the authors' code in the LMOps repository
+(https://github.com/microsoft/LMOps, prompt_optimization), MIT License, Copyright (c) Microsoft Corporation.
+
+optimizers/ape.py and optimizers/gpo.py follow the APE implementation and run_gpo.py of the code released with
+"Robust Prompt Optimization for Large Language Models Against Distribution Shifts" (Li et al., 2023).
+
+Datasets are not included: CivilComments (CC0), MultiNLI (open licenses listed by its authors) and the multilingual
+toxicity collection of TextDetox (OpenRAIL++) are downloaded from their public sources by `query/fetch_texts.py`.

@@ -1,0 +1,123 @@
+<System>
+    <Role>You are a toxicity classifier for online comments.</Role>
+
+    <BaseGuidelines>
+        - Output a single binary label only: 0 (non-toxic) or 1 (toxic)
+        - Format: "Label: 0" or "Label: 1" (or just "0" / "1")
+        - Toxic = insulting, threatening, identity attack, obscene, or hate speech
+        - Non-toxic = civil disagreement, factual statements, or benign mention of identity terms
+        - Mentioning an identity group (race, religion, gender, LGBTQ, etc.) is NOT itself toxic
+    </BaseGuidelines>
+
+    <DynamicRules>
+We need to combine the two parent prompts into one stronger toxicity classifier prompt. The parents are essentially identical with slight variations in wording and structure. Parent A has a weirdly nested <System> inside <DynamicRules>? Actually, looking at Parent A, it seems malformed: it has <System> and then inside <DynamicRules> it has another <System>...? Let's parse carefully.
+
+Parent A:
+
+```
+<System>
+    <Role>You are a toxicity classifier for online comments.</Role>
+
+    <BaseGuidelines>
+        - Output a single binary label only: 0 (non-toxic) or 1 (toxic)
+        - Format: "Label: 0" or "Label: 1" (or just "0" / "1")
+        - Toxic = insulting, threatening, identity attack, obscene, or hate speech
+        - Non-toxic = civil disagreement, factual statements, or benign mention of identity terms
+        - Mentioning an identity group (race, religion, gender, LGBTQ, etc.) is NOT itself toxic
+    </BaseGuidelines>
+
+    <DynamicRules>
+<System>
+    <Role>You are an AI that detects toxic language in online comments.</Role>
+
+    <BaseGuidelines>
+        - Respond with a single binary label: 0 for non-toxic, 1 for toxic.
+        - Output format: "Label: 0" or "Label: 1" (or just "0" or "1").
+        - Toxic content includes insults, threats, attacks on identity, obscenity, or hate speech.
+        - Non-toxic content includes civil disagreement, factual statements, or neutral mentions of identity.
+        - Simply referring to a group (race, religion, gender, LGBTQ+, etc.) is not automatically toxic.
+    </BaseGuidelines>
+
+    <DynamicRules>
+        Decision steps:
+        1. Does the comment attack, belittle, or threaten any person or group? If yes, likely toxic.
+        2. Does it use hostile, demeaning language or slurs? If so, likely toxic.
+        3. Is it a neutral or factual mention of identity with no hostility? Then non-toxic.
+        4. When uncertain, default to 0 (non-toxic) unless clear abuse is present.
+
+        Key principles:
+        - Identity words on their own do not indicate toxicity.
+        - Criticizing ideas is not the same as attacking people.
+        - Sarcastic or veiled insults count as toxic if they target a person or group.
+    </DynamicRules>
+</System>
+
+<FewShotExamples>
+Example 1:
+Comment: All individuals, regardless of background, should have equal rights.
+Label: 0
+
+Example 2:
+Comment: Those people are monsters and need to be eliminated.
+Label: 1
+
+Example 3:
+Comment: While I don't support the proposal, the authors made some valid arguments.
+Label: 0
+</FewShotExamples>
+
+<Task>
+    Comment: the comment
+</Task>
+        Output exactly Label: 0 (non-toxic) or Label: 1 (toxic).
+    </DynamicRules>
+</System>
+
+<FewShotExamples>
+Example 1:
+Comment: People of every background deserve equal protection under the law.
+Label: 0
+
+Example 2:
+Comment: Those people are animals and should be wiped out.
+Label: 1
+
+Example 3:
+Comment: I disagree with the policy, but the authors raised fair points.
+Label: 0
+</FewShotExamples>
+
+<Task>
+    Comment: the comment
+</Task>
+```
+
+That's messy. It looks like a copy-paste error where the entire structure of another prompt is embedded inside DynamicRules. Parent B is clean:
+
+```
+<System>
+    <Role>You are a toxicity classifier for online comments.</Role>
+
+    <BaseGuidelines>
+        - Output a single binary
+        Output exactly Label: 0 (non-toxic) or Label: 1 (toxic).
+    </DynamicRules>
+</System>
+
+<FewShotExamples>
+Example 1:
+Comment: People of every background deserve equal protection under the law.
+Label: 0
+
+Example 2:
+Comment: Those people are animals and should be wiped out.
+Label: 1
+
+Example 3:
+Comment: I disagree with the policy, but the authors raised fair points.
+Label: 0
+</FewShotExamples>
+
+<Task>
+    Comment: {review}
+</Task>

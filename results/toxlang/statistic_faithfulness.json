@@ -1,0 +1,63 @@
+{
+  "dataset": "toxlang",
+  "n_prompts": 10,
+  "rows_per_cell_full_test": 250,
+  "prompts": [
+    "s15:42_ape__hard_min",
+    "s15:42_apo__hard_min",
+    "s15:42_evoprompt_de__hard_min",
+    "s15:42_gepa__hard_min",
+    "s15:43_ape__hard_min",
+    "s15:43_apo__hard_min",
+    "s15:43_gepa__hard_min",
+    "s15:44_apo__hard_min",
+    "s15:44_evoprompt_de__hard_min",
+    "seed"
+  ],
+  "faithfulness": {
+    "hard_min": {
+      "rho_vs_hard_min": 0.9999999999999999,
+      "rho_vs_mean_gba": 0.8909090909090909
+    },
+    "cvar25": {
+      "rho_vs_hard_min": 0.9999999999999999,
+      "rho_vs_mean_gba": 0.8909090909090909
+    },
+    "softmin_w0": {
+      "rho_vs_hard_min": 0.8909090909090909,
+      "rho_vs_mean_gba": 0.9999999999999999
+    },
+    "softmin_w10": {
+      "rho_vs_hard_min": 0.8909090909090909,
+      "rho_vs_mean_gba": 0.9999999999999999
+    },
+    "softmin_w20": {
+      "rho_vs_hard_min": 0.8909090909090909,
+      "rho_vs_mean_gba": 0.9999999999999999
+    },
+    "softmin_w40": {
+      "rho_vs_hard_min": 0.8909090909090909,
+      "rho_vs_mean_gba": 0.9999999999999999
+    },
+    "softmin_w80": {
+      "rho_vs_hard_min": 0.8909090909090909,
+      "rho_vs_mean_gba": 0.9999999999999999
+    },
+    "softmin_w160": {
+      "rho_vs_hard_min": 0.8909090909090909,
+      "rho_vs_mean_gba": 0.9999999999999999
+    },
+    "softmin_w320": {
+      "rho_vs_hard_min": 0.8909090909090909,
+      "rho_vs_mean_gba": 0.9999999999999999
+    },
+    "mean_gba": {
+      "rho_vs_hard_min": 0.8909090909090909,
+      "rho_vs_mean_gba": 0.9999999999999999
+    },
+    "worst_class": {
+      "rho_vs_hard_min": 0.4545454545454545,
+      "rho_vs_mean_gba": 0.6848484848484848
+    }
+  }
+}

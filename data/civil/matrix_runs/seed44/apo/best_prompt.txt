@@ -1,0 +1,22 @@
+# Task
+**Decision flow:**
+1. Does the comment contain direct personal attacks (e.g., name-calling like "liar," "idiot," "moron," or other degrading labels) aimed at specific individuals or named entities? → toxic, even if framed as policy criticism.
+2. Does the comment use slurs, hostile epithets, or explicitly hateful expressions targeting a person or group based on identity? → toxic.
+3. Does the comment employ sarcasm, veiled insults, or dismissive humor that clearly targets and demeans a specific person or group (e.g., "make like a tree and get outta here" directed at a company/entity as a hostile taunt)? → toxic. If the sarcasm is directed purely at ideas, policies, or systems without dehumanizing individuals, it is non-toxic.
+4. Does the comment criticize policies, institutions, ideologies, or actions (even sharply) without stripping the humanity of their adherents? → non-toxic. However, if the criticism is inseparable from a personal attack on an individual (e.g., "this idiot's policy is..."), the personal attack makes it toxic.
+5. Does the comment issue broad negative generalizations that stereotype or frame entire identity groups as inherently flawed, dangerous, or subhuman? → toxic. Descriptive statements about a specific subset or behavior (e.g., "predators" as a behavioral category, not an identity group) that do not paint a whole protected group as uniformly bad are non-toxic.
+6. In ambiguous cases, default to non-toxic (0) unless there is unmistakable hostile intent toward people.
+
+**Fundamental principles:**
+- Critiquing institutions, doctrines, governments, or policies is non-toxic, but attaching degrading personal labels to individuals in the process (e.g., "pathological liar," "this idiot") turns it toxic.
+- Mentioning identity terms by themselves does not signal toxicity.
+- Sarcasm and veiled insults are toxic when they function as personal or group-directed slights, not when mocking ideas or systems without targeting people.
+- Blanket statements that paint whole groups as uniformly bad, dangerous, or primitive are toxic, even without slurs. Describing a behavioral subset (e.g., criminals, predators) without equating it to an entire identity group is not a blanket generalization.
+- Rhetorical questions about policies or systems are non-toxic; rhetorical questions that perpetuate group stereotypes are toxic.
+
+# Output format
+Output exactly 'Label: 0' or 'Label: 1'.
+
+# Prediction
+Text: {review}
+Label:

@@ -1,0 +1,261 @@
+{
+  "best_prompt": "<System>\n    <Role>You are a toxicity classifier for online comments.</Role>\n\n    <BaseGuidelines>\n        - Output a single binary label only: 0 (non-toxic) or 1 (toxic)\n        - Format: \"Label: 0\" or \"Label: 1\" (or just \"0\" / \"1\")\n        - Toxic = insulting, threatening, identity attack, obscene, or hate speech\n        - Non-toxic = civil disagreement, factual statements, or benign mention of identity terms\n        - Mentioning an identity group (race, religion, gender, LGBTQ, etc.) is NOT itself toxic\n    </BaseGuidelines>\n\n    <DynamicRules>\nWe are given several input-output examples. The inputs are text passages, and the outputs are either 0 or 1. We need to infer the instruction that was given to the friend, and describe the output format. Looking at the examples: - First input: talks about Catholic dogma, canon law, ordination of women. Output: 0. - Second input: misogynistic, talking about keeping figure, fatness undesirable, etc. Output: 1. - Third input:\n        Output exactly Label: 0 (non-toxic) or Label: 1 (toxic).\n    </DynamicRules>\n</System>\n\n<FewShotExamples>\nExample 1:\nComment: People of every background deserve equal protection under the law.\nLabel: 0\n\nExample 2:\nComment: Those people are animals and should be wiped out.\nLabel: 1\n\nExample 3:\nComment: I disagree with the policy, but the authors raised fair points.\nLabel: 0\n</FewShotExamples>\n\n<Task>\n    Comment: {review}\n</Task>\n",
+  "n_candidates": 49,
+  "trace": {
+    "method": "ape",
+    "k": 48,
+    "n_shots": 288,
+    "temperature": 0.0,
+    "scored": [
+      {
+        "softmin": 0.6860939443399249,
+        "worst_gba": 0.6419753086419753,
+        "prompt_len": 1435
+      },
+      {
+        "softmin": 0.6775822863559776,
+        "worst_gba": 0.6293827160493827,
+        "prompt_len": 1436
+      },
+      {
+        "softmin": 0.6824569857618451,
+        "worst_gba": 0.6409876543209876,
+        "prompt_len": 1491
+      },
+      {
+        "softmin": 0.6623857092948289,
+        "worst_gba": 0.6306172839506173,
+        "prompt_len": 1477
+      },
+      {
+        "softmin": 0.680488473746765,
+        "worst_gba": 0.635432098765432,
+        "prompt_len": 1464
+      },
+      {
+        "softmin": 0.6690006947937812,
+        "worst_gba": 0.6244444444444445,
+        "prompt_len": 1384
+      },
+      {
+        "softmin": 0.6840970279542149,
+        "worst_gba": 0.6369135802469135,
+        "prompt_len": 1440
+      },
+      {
+        "softmin": 0.6833941471647177,
+        "worst_gba": 0.6364197530864197,
+        "prompt_len": 1329
+      },
+      {
+        "softmin": 0.6458564372274859,
+        "worst_gba": 0.6000000000000001,
+        "prompt_len": 1430
+      },
+      {
+        "softmin": 0.6860125764112631,
+        "worst_gba": 0.6267901234567902,
+        "prompt_len": 1413
+      },
+      {
+        "softmin": 0.6900880143373161,
+        "worst_gba": 0.6398765432098765,
+        "prompt_len": 1475
+      },
+      {
+        "softmin": 0.680390103985746,
+        "worst_gba": 0.6359259259259259,
+        "prompt_len": 1428
+      },
+      {
+        "softmin": 0.6837623581028786,
+        "worst_gba": 0.6313580246913579,
+        "prompt_len": 1442
+      },
+      {
+        "softmin": 0.6772692007171133,
+        "worst_gba": 0.6395061728395062,
+        "prompt_len": 1427
+      },
+      {
+        "softmin": 0.5743444117216122,
+        "worst_gba": 0.5339506172839505,
+        "prompt_len": 1457
+      },
+      {
+        "softmin": 0.6859301500528431,
+        "worst_gba": 0.6323456790123456,
+        "prompt_len": 1471
+      },
+      {
+        "softmin": 0.6287582086354603,
+        "worst_gba": 0.5981481481481481,
+        "prompt_len": 1376
+      },
+      {
+        "softmin": 0.5696073118507565,
+        "worst_gba": 0.5269135802469136,
+        "prompt_len": 1425
+      },
+      {
+        "softmin": 0.6883153085241003,
+        "worst_gba": 0.633827160493827,
+        "prompt_len": 1447
+      },
+      {
+        "softmin": 0.6727988635104717,
+        "worst_gba": 0.6153086419753087,
+        "prompt_len": 1406
+      },
+      {
+        "softmin": 0.6824968371436355,
+        "worst_gba": 0.6308641975308642,
+        "prompt_len": 1464
+      },
+      {
+        "softmin": 0.6641410991414882,
+        "worst_gba": 0.5941975308641975,
+        "prompt_len": 1474
+      },
+      {
+        "softmin": 0.634869572009972,
+        "worst_gba": 0.5818518518518518,
+        "prompt_len": 1494
+      },
+      {
+        "softmin": 0.667026214108865,
+        "worst_gba": 0.6345679012345679,
+        "prompt_len": 1332
+      },
+      {
+        "softmin": 0.6819457921330954,
+        "worst_gba": 0.6253086419753086,
+        "prompt_len": 1457
+      },
+      {
+        "softmin": 0.6886184451529679,
+        "worst_gba": 0.6449382716049383,
+        "prompt_len": 1500
+      },
+      {
+        "softmin": 0.5501145974329685,
+        "worst_gba": 0.5261728395061728,
+        "prompt_len": 1369
+      },
+      {
+        "softmin": 0.675891010473577,
+        "worst_gba": 0.6385185185185186,
+        "prompt_len": 1438
+      },
+      {
+        "softmin": 0.6839816633154766,
+        "worst_gba": 0.6364197530864197,
+        "prompt_len": 1461
+      },
+      {
+        "softmin": 0.6664602661090075,
+        "worst_gba": 0.6169135802469136,
+        "prompt_len": 1450
+      },
+      {
+        "softmin": 0.6867272736731821,
+        "worst_gba": 0.6374074074074074,
+        "prompt_len": 1432
+      },
+      {
+        "softmin": 0.6924684650454798,
+        "worst_gba": 0.6509876543209876,
+        "prompt_len": 1422
+      },
+      {
+        "softmin": 0.6783500134090255,
+        "worst_gba": 0.6349382716049383,
+        "prompt_len": 1429
+      },
+      {
+        "softmin": 0.6814755272633837,
+        "worst_gba": 0.6516049382716049,
+        "prompt_len": 1430
+      },
+      {
+        "softmin": 0.6788044286418513,
+        "worst_gba": 0.6288888888888889,
+        "prompt_len": 1307
+      },
+      {
+        "softmin": 0.6712079674461782,
+        "worst_gba": 0.6355555555555557,
+        "prompt_len": 1438
+      },
+      {
+        "softmin": 0.6813775929910003,
+        "worst_gba": 0.6298765432098765,
+        "prompt_len": 1445
+      },
+      {
+        "softmin": 0.677938902278328,
+        "worst_gba": 0.6182716049382717,
+        "prompt_len": 1397
+      },
+      {
+        "softmin": 0.6839814876304148,
+        "worst_gba": 0.6424691358024692,
+        "prompt_len": 1418
+      },
+      {
+        "softmin": 0.6809550089274728,
+        "worst_gba": 0.6354320987654322,
+        "prompt_len": 1451
+      },
+      {
+        "softmin": 0.6761498331775708,
+        "worst_gba": 0.6274074074074074,
+        "prompt_len": 1289
+      },
+      {
+        "softmin": 0.6785444433061658,
+        "worst_gba": 0.6233333333333333,
+        "prompt_len": 1470
+      },
+      {
+        "softmin": 0.6878316240846664,
+        "worst_gba": 0.654074074074074,
+        "prompt_len": 1505
+      },
+      {
+        "softmin": 0.6811048520125799,
+        "worst_gba": 0.6359259259259259,
+        "prompt_len": 1451
+      },
+      {
+        "softmin": 0.6856260638407751,
+        "worst_gba": 0.6318518518518519,
+        "prompt_len": 1434
+      },
+      {
+        "softmin": 0.6459535870885117,
+        "worst_gba": 0.6009876543209876,
+        "prompt_len": 1452
+      },
+      {
+        "softmin": 0.670363007836458,
+        "worst_gba": 0.6309876543209877,
+        "prompt_len": 1481
+      },
+      {
+        "softmin": 0.6801026000428987,
+        "worst_gba": 0.6298765432098765,
+        "prompt_len": 1444
+      },
+      {
+        "softmin": 0.6851304462044924,
+        "worst_gba": 0.6267901234567901,
+        "prompt_len": 1488
+      }
+    ],
+    "best_softmin": 0.6924684650454798,
+    "meta_prompt": "gpo_run_gpo.py"
+  },
+  "scorer_calls": 163080,
+  "optimizer_calls": 327
+}

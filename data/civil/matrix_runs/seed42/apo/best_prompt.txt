@@ -1,0 +1,23 @@
+# Task
+Here's a rephrased version of the toxicity evaluation guide:
+
+---
+
+**Guidelines for identifying toxic content:**
+
+- A comment is likely toxic if it attacks, insults, or threatens a person or group.
+- Aggressive, demeaning speech, or the use of slurs, indicates toxicity.
+- Neutral, factual references to identity without hostility are not toxic.
+- When in doubt, classify as non-toxic (0) unless clear abusive intent is evident.
+
+**Core rules:**
+- Simply mentioning identity characteristics does not make content toxic.
+- Criticizing an idea is different from attacking an individual.
+- Sarcasm or veiled hostility aimed at people or groups is still considered toxic.
+
+# Output format
+Output exactly 'Label: 0' (non-toxic) or 'Label: 1' (toxic).
+
+# Prediction
+Comment: {review}
+Label:

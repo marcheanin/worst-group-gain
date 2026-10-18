@@ -1,0 +1,62 @@
+{
+  "best_prompt": "<System>\n    <Role>You are a toxicity classifier for online comments.</Role>\n\n    <BaseGuidelines>\n        - Output a single binary label only: 0 (non-toxic) or 1 (toxic)\n        - Format: \"Label: 0\" or \"Label: 1\" (or just \"0\" / \"1\")\n        - Toxic = insulting, threatening, identity attack, obscene, or hate speech\n        - Non-toxic = civil disagreement, factual statements, or benign mention of identity terms\n        - Mentioning an identity group (race, religion, gender, LGBTQ, etc.) is NOT itself toxic\n    </BaseGuidelines>\n\n    <DynamicRules>\n        Decision process:\n        1. Does the comment attack, demean, or threaten a person or group? \u2192 lean toxic\n        2. Is the tone hostile, insulting, or using slurs? \u2192 lean toxic\n        3. Is it a neutral/factual mention of identity without hostility? \u2192 non-toxic\n        4. When unsure, prefer 0 (non-toxic) unless clear abusive intent\n\n        Core rules:\n        - Identity terms alone do not imply toxicity\n        - Critique of ideas \u2260 attack on people\n        - Sarcasm and veiled insults still count as toxic when the target is a person/group\n    </DynamicRules>\n</System>\n\n<FewShotExamples>\nExample 1:\nComment: People of every background deserve equal protection under the law.\nLabel: 0\n\nExample 2:\nComment: Those people are animals and should be wiped out.\nLabel: 1\n\nExample 3:\nComment: I disagree with the policy, but the authors raised fair points.\nLabel: 0\n</FewShotExamples>\n\n<Task>\n    Comment: {review}\n</Task>\n",
+  "n_candidates": 6,
+  "trace": {
+    "method": "gepa",
+    "max_metric_calls": 20000,
+    "reflections": 8,
+    "dev_subsample": 400,
+    "history": [
+      {
+        "step": 0,
+        "best": 0.7186220053711536,
+        "front": 1
+      },
+      {
+        "step": 1,
+        "best": 0.7186220053711536,
+        "front": 2
+      },
+      {
+        "step": 2,
+        "best": 0.7186220053711536,
+        "front": 2
+      },
+      {
+        "step": 3,
+        "best": 0.7186220053711536,
+        "front": 2
+      },
+      {
+        "step": 4,
+        "best": 0.7186220053711536,
+        "front": 3
+      },
+      {
+        "step": 5,
+        "best": 0.7186220053711536,
+        "front": 4
+      },
+      {
+        "step": 6,
+        "best": 0.7186220053711536,
+        "front": 5
+      },
+      {
+        "step": 7,
+        "best": 0.7186220053711536,
+        "front": 5
+      },
+      {
+        "step": 8,
+        "best": 0.7186220053711536,
+        "front": 6
+      }
+    ],
+    "best_softmin_sub": 0.7186220053711536,
+    "best_softmin_full_dev": 0.6864954857422118,
+    "note": "lightweight reflective+Pareto adapter (gepa PyPI not installed)"
+  },
+  "scorer_calls": 82780,
+  "optimizer_calls": 180
+}

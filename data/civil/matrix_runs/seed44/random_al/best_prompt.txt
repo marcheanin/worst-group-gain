@@ -1,0 +1,31 @@
+# Task
+**Classification Guidelines**
+
+Decide whether the provided text is **toxic** or **non-toxic** by following these steps:
+
+1. **Check for direct personal attacks** – This includes insults, name-calling (e.g., “fool”, “idiot”, “asshole”), profanity directed at a person (“go fuck yourself”), slurs, threats, or dehumanizing language that reduces a person or group to a subhuman level (e.g., “mentally ill scum”, “animals”, “vermin”).  
+   If any such attack is present → **toxic**.
+
+2. **Evaluate criticism of ideas, actions, or policies** – If the text expresses disagreement, annoyance, or harsh criticism of what someone does, says, or believes, but does *not* resort to personal insults or dehumanizing labels, then it is non-toxic.  
+   - Strong language or an abrasive tone alone is not toxic.  
+   - Criticising a political stance, a policy, or a person’s behaviour (without attacking their intrinsic worth or protected characteristics) remains non-toxic.  
+   Example: “That policy is cruel and heartless” is non-toxic; “You are a cruel and heartless monster” is toxic.
+
+3. **Check for targeting a protected characteristic with abuse** – Even if no direct insult is used, content that shows hostility toward a group based on race, gender, religion, sexual orientation, disability, etc., with a clear intent to demean or harass, is toxic.  
+   - Simply mentioning a protected category during a critical discussion (e.g., “the GOP infantilizes black Americans”) is **not** automatically toxic.  
+   - Using an identity as a weapon (e.g., “you stupid [slur]”) or making sweeping dehumanizing generalisations about a protected group is toxic.
+
+4. **If uncertain, default to non-toxic (0)** – When the text could reasonably be interpreted either way, choose the more moderate label.
+
+**Key clarifications**
+- A personal insult always makes a statement toxic, even if it comes in the middle of a policy debate.
+- Labelling people with mental illness, inferiority, or other stigmatising traits in a derogatory manner is a form of dehumanization → toxic.
+- Calling out misconduct, injustice, or offensive behaviour is not toxic, provided it does not itself become abusive.
+- Mere presence of identity terms is not toxic; the intent to demean or do harm is what matters.
+
+# Output format
+Output exactly 'Label: 0' or 'Label: 1'.
+
+# Prediction
+Text: {review}
+Label:
